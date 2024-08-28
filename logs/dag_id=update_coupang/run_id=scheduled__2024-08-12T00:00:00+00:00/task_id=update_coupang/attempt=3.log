@@ -1,0 +1,38 @@
+[2024-08-12T04:17:16.562+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-12T04:17:16.715+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_coupang.update_coupang scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-12T04:17:16.722+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_coupang.update_coupang scheduled__2024-08-12T00:00:00+00:00 [queued]>
+[2024-08-12T04:17:16.722+0000] {taskinstance.py:2303} INFO - Starting attempt 3 of 3
+[2024-08-12T04:17:16.732+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_coupang> on 2024-08-12 00:00:00+00:00
+[2024-08-12T04:17:16.741+0000] {standard_task_runner.py:63} INFO - Started process 184413 to run task
+[2024-08-12T04:17:16.746+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_coupang', 'update_coupang', 'scheduled__2024-08-12T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/coupang_batch.py', '--cfg-path', '/tmp/tmp_bl5ek_d']
+[2024-08-12T04:17:16.748+0000] {standard_task_runner.py:91} INFO - Job 163: Subtask update_coupang
+[2024-08-12T04:17:16.790+0000] {task_command.py:426} INFO - Running <TaskInstance: update_coupang.update_coupang scheduled__2024-08-12T00:00:00+00:00 [running]> on host bcc9fe6b3d78
+[2024-08-12T04:17:16.861+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zzioni' AIRFLOW_CTX_DAG_ID='update_coupang' AIRFLOW_CTX_TASK_ID='update_coupang' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-12T00:00:00+00:00'
+[2024-08-12T04:17:16.862+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-12T04:17:17.174+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/354 [00:00<?, ?it/s]
+[2024-08-12T04:17:17.177+0000] {logging_mixin.py:188} WARNING - 100%|##########| 354/354 [00:00<00:00, 175051.12it/s]
+[2024-08-12T04:17:17.205+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-12T04:17:17.205+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/coupang_batch.py", line 307, in coupang_info_manual
+    final_result["final_price"] = final_result.apply(lambda x : get_final_price(x['n_user_price'], x['y_user_price']), axis = 1)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4301, in __setitem__
+    self._set_item_frame_value(key, value)
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 4459, in _set_item_frame_value
+    raise ValueError(
+ValueError: Cannot set a DataFrame with multiple columns to the single column final_price
+[2024-08-12T04:17:17.219+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=update_coupang, task_id=update_coupang, execution_date=20240812T000000, start_date=20240812T041716, end_date=20240812T041717
+[2024-08-12T04:17:17.233+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 163 for task update_coupang (Cannot set a DataFrame with multiple columns to the single column final_price; 184413)
+[2024-08-12T04:17:17.276+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-08-12T04:17:17.305+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-12T04:17:17.308+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

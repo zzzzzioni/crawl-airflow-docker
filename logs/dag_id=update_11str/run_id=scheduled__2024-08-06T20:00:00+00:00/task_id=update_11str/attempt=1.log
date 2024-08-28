@@ -1,0 +1,78 @@
+[2024-08-07T07:16:45.625+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [queued]>
+[2024-08-07T07:16:45.634+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [queued]>
+[2024-08-07T07:16:45.635+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-07T07:16:45.635+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-08-07T07:16:45.635+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-07T07:16:45.649+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): update_11str> on 2024-08-06 20:00:00+00:00
+[2024-08-07T07:16:45.658+0000] {standard_task_runner.py:55} INFO - Started process 27987 to run task
+[2024-08-07T07:16:45.661+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'update_11str', 'update_11str', 'scheduled__2024-08-06T20:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/str11_batch.py', '--cfg-path', '/tmp/tmp4naydhkm']
+[2024-08-07T07:16:45.661+0000] {standard_task_runner.py:83} INFO - Job 8: Subtask update_11str
+[2024-08-07T07:16:45.716+0000] {task_command.py:388} INFO - Running <TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [running]> on host df52d8e27975
+[2024-08-07T07:16:45.773+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=zzioni
+AIRFLOW_CTX_DAG_ID=update_11str
+AIRFLOW_CTX_TASK_ID=update_11str
+AIRFLOW_CTX_EXECUTION_DATE=2024-08-06T20:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-08-06T20:00:00+00:00
+[2024-08-07T07:16:45.774+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/str11_batch.py", line 26, in update_11str
+    price, prices_id, deleted = extract_price_11str()
+NameError: name 'extract_price_11str' is not defined
+[2024-08-07T07:16:45.781+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=update_11str, task_id=update_11str, execution_date=20240806T200000, start_date=20240807T071645, end_date=20240807T071645
+[2024-08-07T07:16:45.790+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 8 for task update_11str (name 'extract_price_11str' is not defined; 27987)
+[2024-08-07T07:16:45.831+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-08-07T07:16:45.876+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T09:01:21.802+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T09:01:21.824+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [queued]>
+[2024-08-07T09:01:21.833+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [queued]>
+[2024-08-07T09:01:21.833+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-08-07T09:01:21.925+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_11str> on 2024-08-06 20:00:00+00:00
+[2024-08-07T09:01:21.933+0000] {standard_task_runner.py:63} INFO - Started process 184 to run task
+[2024-08-07T09:01:21.937+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_11str', 'update_11str', 'scheduled__2024-08-06T20:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/str11_batch.py', '--cfg-path', '/tmp/tmppmyplnxb']
+[2024-08-07T09:01:21.939+0000] {standard_task_runner.py:91} INFO - Job 22: Subtask update_11str
+[2024-08-07T09:01:21.995+0000] {task_command.py:426} INFO - Running <TaskInstance: update_11str.update_11str scheduled__2024-08-06T20:00:00+00:00 [running]> on host 36f576e8f7f1
+[2024-08-07T09:01:22.092+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zzioni' AIRFLOW_CTX_DAG_ID='update_11str' AIRFLOW_CTX_TASK_ID='update_11str' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T20:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-06T20:00:00+00:00'
+[2024-08-07T09:01:22.093+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T09:01:22.894+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-08-07T09:01:22.914+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-08-07T09:01:22.915+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T09:01:22.915+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/str11_batch.py", line 26, in update_11str
+    price, prices_id, deleted = extract_price_11str()
+  File "/opt/airflow/dags/utils/crawl_11str.py", line 102, in extract_price_11str
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+  File "/home/airflow/.local/lib/python3.10/site-packages/webdriver_manager/chrome.py", line 40, in install
+    driver_path = self._get_driver_binary_path(self.driver)
+  File "/home/airflow/.local/lib/python3.10/site-packages/webdriver_manager/core/manager.py", line 40, in _get_driver_binary_path
+    file = self._download_manager.download_file(driver.get_driver_download_url(os_type))
+  File "/home/airflow/.local/lib/python3.10/site-packages/webdriver_manager/drivers/chrome.py", line 32, in get_driver_download_url
+    driver_version_to_download = self.get_driver_version_to_download()
+  File "/home/airflow/.local/lib/python3.10/site-packages/webdriver_manager/core/driver.py", line 48, in get_driver_version_to_download
+    return self.get_latest_release_version()
+  File "/home/airflow/.local/lib/python3.10/site-packages/webdriver_manager/drivers/chrome.py", line 64, in get_latest_release_version
+    determined_browser_version = ".".join(determined_browser_version.split(".")[:3])
+AttributeError: 'NoneType' object has no attribute 'split'
+[2024-08-07T09:01:22.922+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=update_11str, task_id=update_11str, execution_date=20240806T200000, start_date=20240807T090121, end_date=20240807T090122
+[2024-08-07T09:01:22.932+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 22 for task update_11str ('NoneType' object has no attribute 'split'; 184)
+[2024-08-07T09:01:22.953+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-08-07T09:01:22.975+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T09:01:22.978+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

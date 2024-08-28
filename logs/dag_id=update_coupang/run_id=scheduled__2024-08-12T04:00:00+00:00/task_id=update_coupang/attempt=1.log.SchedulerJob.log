@@ -1,0 +1,1 @@
+[2024-08-12T08:06:43.448+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: update_coupang.update_coupang scheduled__2024-08-12T04:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

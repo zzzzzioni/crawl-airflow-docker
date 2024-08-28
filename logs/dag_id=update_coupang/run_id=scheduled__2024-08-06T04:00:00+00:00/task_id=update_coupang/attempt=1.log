@@ -1,0 +1,64 @@
+[2024-08-07T07:37:11.196+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [queued]>
+[2024-08-07T07:37:11.204+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [queued]>
+[2024-08-07T07:37:11.205+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-07T07:37:11.205+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2024-08-07T07:37:11.205+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2024-08-07T07:37:11.217+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): update_coupang> on 2024-08-06 04:00:00+00:00
+[2024-08-07T07:37:11.224+0000] {standard_task_runner.py:55} INFO - Started process 32886 to run task
+[2024-08-07T07:37:11.227+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'update_coupang', 'update_coupang', 'scheduled__2024-08-06T04:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/coupang_batch.py', '--cfg-path', '/tmp/tmpnxmf4ud8']
+[2024-08-07T07:37:11.227+0000] {standard_task_runner.py:83} INFO - Job 11: Subtask update_coupang
+[2024-08-07T07:37:11.283+0000] {task_command.py:388} INFO - Running <TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [running]> on host df52d8e27975
+[2024-08-07T07:37:11.347+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=zzioni
+AIRFLOW_CTX_DAG_ID=update_coupang
+AIRFLOW_CTX_TASK_ID=update_coupang
+AIRFLOW_CTX_EXECUTION_DATE=2024-08-06T04:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-08-06T04:00:00+00:00
+[2024-08-07T07:37:11.348+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/coupang_batch.py", line 99, in coupang_info_manual
+    with open('/data/shopai/dags/hatchery-shopai-v2-model/hatchery_extract_model/utils/mongo.yaml') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/shopai/dags/hatchery-shopai-v2-model/hatchery_extract_model/utils/mongo.yaml'
+[2024-08-07T07:37:11.356+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=update_coupang, task_id=update_coupang, execution_date=20240806T040000, start_date=20240807T073711, end_date=20240807T073711
+[2024-08-07T07:37:11.367+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 11 for task update_coupang ([Errno 2] No such file or directory: '/data/shopai/dags/hatchery-shopai-v2-model/hatchery_extract_model/utils/mongo.yaml'; 32886)
+[2024-08-07T07:37:11.398+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2024-08-07T07:37:11.426+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T09:01:20.764+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T09:01:20.785+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [queued]>
+[2024-08-07T09:01:20.792+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [queued]>
+[2024-08-07T09:01:20.792+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-08-07T09:01:20.804+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_coupang> on 2024-08-06 04:00:00+00:00
+[2024-08-07T09:01:20.812+0000] {standard_task_runner.py:63} INFO - Started process 107 to run task
+[2024-08-07T09:01:20.814+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_coupang', 'update_coupang', 'scheduled__2024-08-06T04:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/coupang_batch.py', '--cfg-path', '/tmp/tmpb4djvfho']
+[2024-08-07T09:01:20.816+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask update_coupang
+[2024-08-07T09:01:20.857+0000] {task_command.py:426} INFO - Running <TaskInstance: update_coupang.update_coupang scheduled__2024-08-06T04:00:00+00:00 [running]> on host 36f576e8f7f1
+[2024-08-07T09:01:20.939+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zzioni' AIRFLOW_CTX_DAG_ID='update_coupang' AIRFLOW_CTX_TASK_ID='update_coupang' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-06T04:00:00+00:00'
+[2024-08-07T09:01:20.940+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T09:01:20.941+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T09:01:20.941+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/coupang_batch.py", line 98, in coupang_info_manual
+    with open('/data/jw_vol/airflow/dags/mongo.yaml') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/data/jw_vol/airflow/dags/mongo.yaml'
+[2024-08-07T09:01:20.949+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=update_coupang, task_id=update_coupang, execution_date=20240806T040000, start_date=20240807T090120, end_date=20240807T090120
+[2024-08-07T09:01:20.962+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 12 for task update_coupang ([Errno 2] No such file or directory: '/data/jw_vol/airflow/dags/mongo.yaml'; 107)
+[2024-08-07T09:01:20.986+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-08-07T09:01:21.097+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T09:01:21.098+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

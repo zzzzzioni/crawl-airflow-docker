@@ -1,0 +1,118 @@
+[2024-08-07T09:01:21.898+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-07T09:01:21.918+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_naver.update_naver scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T09:01:21.926+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_naver.update_naver scheduled__2024-08-06T00:00:00+00:00 [queued]>
+[2024-08-07T09:01:21.926+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2024-08-07T09:01:21.938+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): update_naver> on 2024-08-06 00:00:00+00:00
+[2024-08-07T09:01:21.947+0000] {standard_task_runner.py:63} INFO - Started process 193 to run task
+[2024-08-07T09:01:21.951+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_naver', 'update_naver', 'scheduled__2024-08-06T00:00:00+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/naver_batch.py', '--cfg-path', '/tmp/tmpe9uavkvq']
+[2024-08-07T09:01:21.954+0000] {standard_task_runner.py:91} INFO - Job 23: Subtask update_naver
+[2024-08-07T09:01:22.042+0000] {task_command.py:426} INFO - Running <TaskInstance: update_naver.update_naver scheduled__2024-08-06T00:00:00+00:00 [running]> on host 36f576e8f7f1
+[2024-08-07T09:01:22.138+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zzioni' AIRFLOW_CTX_DAG_ID='update_naver' AIRFLOW_CTX_TASK_ID='update_naver' AIRFLOW_CTX_EXECUTION_DATE='2024-08-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-06T00:00:00+00:00'
+[2024-08-07T09:01:22.139+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-07T09:01:23.571+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/400 [00:00<?, ?it/s]
+[2024-08-07T09:01:23.806+0000] {logging_mixin.py:188} WARNING -   0%|          | 1/400 [00:00<01:33,  4.27it/s]
+[2024-08-07T09:01:24.042+0000] {logging_mixin.py:188} WARNING -   0%|          | 2/400 [00:00<01:33,  4.26it/s]
+[2024-08-07T09:01:24.288+0000] {logging_mixin.py:188} WARNING -   1%|          | 3/400 [00:00<01:35,  4.17it/s]
+[2024-08-07T09:01:24.528+0000] {logging_mixin.py:188} WARNING -   1%|1         | 4/400 [00:00<01:35,  4.17it/s]
+[2024-08-07T09:01:24.642+0000] {logging_mixin.py:188} WARNING -   2%|2         | 9/400 [00:01<00:31, 12.55it/s]
+[2024-08-07T09:01:24.786+0000] {logging_mixin.py:188} WARNING -   3%|3         | 12/400 [00:01<00:26, 14.84it/s]
+[2024-08-07T09:01:24.889+0000] {logging_mixin.py:188} WARNING -   4%|4         | 18/400 [00:01<00:15, 24.37it/s]
+[2024-08-07T09:01:25.325+0000] {logging_mixin.py:188} WARNING -   6%|6         | 24/400 [00:01<00:20, 18.33it/s]
+[2024-08-07T09:01:25.594+0000] {logging_mixin.py:188} WARNING -   7%|6         | 27/400 [00:02<00:23, 15.93it/s]
+[2024-08-07T09:01:25.700+0000] {logging_mixin.py:188} WARNING -   8%|8         | 32/400 [00:02<00:17, 20.89it/s]
+[2024-08-07T09:01:25.868+0000] {logging_mixin.py:188} WARNING -   9%|9         | 37/400 [00:02<00:15, 23.22it/s]
+[2024-08-07T09:01:25.972+0000] {logging_mixin.py:188} WARNING -  10%|#         | 42/400 [00:02<00:12, 27.91it/s]
+[2024-08-07T09:01:26.412+0000] {logging_mixin.py:188} WARNING -  12%|#1        | 46/400 [00:02<00:19, 17.87it/s]
+[2024-08-07T09:01:26.514+0000] {logging_mixin.py:188} WARNING -  13%|#2        | 51/400 [00:02<00:15, 22.54it/s]
+[2024-08-07T09:01:26.617+0000] {logging_mixin.py:188} WARNING -  14%|#4        | 57/400 [00:03<00:11, 28.93it/s]
+[2024-08-07T09:01:26.718+0000] {logging_mixin.py:188} WARNING -  16%|#5        | 63/400 [00:03<00:09, 35.00it/s]
+[2024-08-07T09:01:26.823+0000] {logging_mixin.py:188} WARNING -  17%|#7        | 69/400 [00:03<00:08, 40.02it/s]
+[2024-08-07T09:01:26.925+0000] {logging_mixin.py:188} WARNING -  19%|#8        | 75/400 [00:03<00:07, 44.58it/s]
+[2024-08-07T09:01:27.511+0000] {logging_mixin.py:188} WARNING -  20%|##        | 81/400 [00:03<00:14, 21.78it/s]
+[2024-08-07T09:01:27.627+0000] {logging_mixin.py:188} WARNING -  22%|##1       | 87/400 [00:04<00:11, 26.51it/s]
+[2024-08-07T09:01:27.744+0000] {logging_mixin.py:188} WARNING -  23%|##3       | 93/400 [00:04<00:09, 31.13it/s]
+[2024-08-07T09:01:27.844+0000] {logging_mixin.py:188} WARNING -  24%|##4       | 98/400 [00:04<00:08, 34.59it/s]
+[2024-08-07T09:01:27.948+0000] {logging_mixin.py:188} WARNING -  26%|##5       | 103/400 [00:04<00:07, 37.50it/s]
+[2024-08-07T09:01:28.481+0000] {logging_mixin.py:188} WARNING -  27%|##7       | 108/400 [00:04<00:14, 20.29it/s]
+[2024-08-07T09:01:28.594+0000] {logging_mixin.py:188} WARNING -  28%|##8       | 114/400 [00:05<00:11, 25.41it/s]
+[2024-08-07T09:01:28.700+0000] {logging_mixin.py:188} WARNING -  30%|###       | 120/400 [00:05<00:09, 30.82it/s]
+[2024-08-07T09:01:28.801+0000] {logging_mixin.py:188} WARNING -  31%|###1      | 125/400 [00:05<00:08, 34.37it/s]
+[2024-08-07T09:01:29.590+0000] {logging_mixin.py:188} WARNING -  32%|###2      | 130/400 [00:06<00:17, 15.30it/s]
+[2024-08-07T09:01:29.703+0000] {logging_mixin.py:188} WARNING -  34%|###4      | 136/400 [00:06<00:13, 19.92it/s]
+[2024-08-07T09:01:29.806+0000] {logging_mixin.py:188} WARNING -  36%|###5      | 142/400 [00:06<00:10, 25.18it/s]
+[2024-08-07T09:01:29.911+0000] {logging_mixin.py:188} WARNING -  37%|###7      | 148/400 [00:06<00:08, 30.52it/s]
+[2024-08-07T09:01:30.244+0000] {logging_mixin.py:188} WARNING -  38%|###8      | 154/400 [00:06<00:09, 25.13it/s]
+[2024-08-07T09:01:30.555+0000] {logging_mixin.py:188} WARNING -  40%|###9      | 158/400 [00:06<00:11, 20.66it/s]
+[2024-08-07T09:01:30.664+0000] {logging_mixin.py:188} WARNING -  41%|####1     | 164/400 [00:07<00:09, 25.96it/s]
+[2024-08-07T09:01:30.769+0000] {logging_mixin.py:188} WARNING -  42%|####2     | 169/400 [00:07<00:07, 29.77it/s]
+[2024-08-07T09:01:30.886+0000] {logging_mixin.py:188} WARNING -  44%|####3     | 175/400 [00:07<00:06, 34.48it/s]
+[2024-08-07T09:01:30.989+0000] {logging_mixin.py:188} WARNING -  45%|####5     | 180/400 [00:07<00:05, 37.50it/s]
+[2024-08-07T09:01:31.498+0000] {logging_mixin.py:188} WARNING -  46%|####6     | 185/400 [00:07<00:10, 20.81it/s]
+[2024-08-07T09:01:31.612+0000] {logging_mixin.py:188} WARNING -  48%|####7     | 191/400 [00:08<00:08, 25.93it/s]
+[2024-08-07T09:01:31.725+0000] {logging_mixin.py:188} WARNING -  49%|####9     | 197/400 [00:08<00:06, 31.01it/s]
+[2024-08-07T09:01:31.833+0000] {logging_mixin.py:188} WARNING -  51%|#####     | 203/400 [00:08<00:05, 36.00it/s]
+[2024-08-07T09:01:31.939+0000] {logging_mixin.py:188} WARNING -  52%|#####2    | 209/400 [00:08<00:04, 40.58it/s]
+[2024-08-07T09:01:32.526+0000] {logging_mixin.py:188} WARNING -  54%|#####3    | 215/400 [00:08<00:08, 21.25it/s]
+[2024-08-07T09:01:32.639+0000] {logging_mixin.py:188} WARNING -  55%|#####5    | 221/400 [00:09<00:06, 26.00it/s]
+[2024-08-07T09:01:32.757+0000] {logging_mixin.py:188} WARNING -  57%|#####6    | 227/400 [00:09<00:05, 30.50it/s]
+[2024-08-07T09:01:32.860+0000] {logging_mixin.py:188} WARNING -  58%|#####8    | 232/400 [00:09<00:04, 33.87it/s]
+[2024-08-07T09:01:32.961+0000] {logging_mixin.py:188} WARNING -  59%|#####9    | 237/400 [00:09<00:04, 37.05it/s]
+[2024-08-07T09:01:33.476+0000] {logging_mixin.py:188} WARNING -  60%|######    | 242/400 [00:09<00:07, 20.66it/s]
+[2024-08-07T09:01:33.579+0000] {logging_mixin.py:188} WARNING -  62%|######1   | 247/400 [00:10<00:06, 24.73it/s]
+[2024-08-07T09:01:33.688+0000] {logging_mixin.py:188} WARNING -  63%|######3   | 252/400 [00:10<00:05, 28.55it/s]
+[2024-08-07T09:01:33.791+0000] {logging_mixin.py:188} WARNING -  64%|######4   | 257/400 [00:10<00:04, 32.50it/s]
+[2024-08-07T09:01:33.894+0000] {logging_mixin.py:188} WARNING -  66%|######5   | 262/400 [00:10<00:03, 36.04it/s]
+[2024-08-07T09:01:34.120+0000] {logging_mixin.py:188} WARNING -  67%|######7   | 268/400 [00:10<00:04, 32.13it/s]
+[2024-08-07T09:01:34.330+0000] {logging_mixin.py:188} WARNING -  68%|######8   | 272/400 [00:10<00:04, 27.55it/s]
+[2024-08-07T09:01:34.444+0000] {logging_mixin.py:188} WARNING -  70%|######9   | 278/400 [00:10<00:03, 32.92it/s]
+[2024-08-07T09:01:34.554+0000] {logging_mixin.py:188} WARNING -  71%|#######1  | 284/400 [00:10<00:03, 37.86it/s]
+[2024-08-07T09:01:34.666+0000] {logging_mixin.py:188} WARNING -  72%|#######2  | 290/400 [00:11<00:02, 41.74it/s]
+[2024-08-07T09:01:34.771+0000] {logging_mixin.py:188} WARNING -  74%|#######4  | 296/400 [00:11<00:02, 45.60it/s]
+[2024-08-07T09:01:34.886+0000] {logging_mixin.py:188} WARNING -  76%|#######5  | 303/400 [00:11<00:01, 49.91it/s]
+[2024-08-07T09:01:34.994+0000] {logging_mixin.py:188} WARNING -  77%|#######7  | 309/400 [00:11<00:01, 51.45it/s]
+[2024-08-07T09:01:35.464+0000] {logging_mixin.py:188} WARNING -  79%|#######8  | 315/400 [00:11<00:03, 27.07it/s]
+[2024-08-07T09:01:35.566+0000] {logging_mixin.py:188} WARNING -  80%|########  | 320/400 [00:11<00:02, 30.69it/s]
+[2024-08-07T09:01:35.672+0000] {logging_mixin.py:188} WARNING -  81%|########1 | 325/400 [00:12<00:02, 33.92it/s]
+[2024-08-07T09:01:35.776+0000] {logging_mixin.py:188} WARNING -  82%|########2 | 330/400 [00:12<00:01, 36.95it/s]
+[2024-08-07T09:01:35.877+0000] {logging_mixin.py:188} WARNING -  84%|########3 | 335/400 [00:12<00:01, 39.84it/s]
+[2024-08-07T09:01:35.981+0000] {logging_mixin.py:188} WARNING -  85%|########5 | 340/400 [00:12<00:01, 41.85it/s]
+[2024-08-07T09:01:36.459+0000] {logging_mixin.py:188} WARNING -  86%|########6 | 345/400 [00:12<00:02, 22.30it/s]
+[2024-08-07T09:01:36.561+0000] {logging_mixin.py:188} WARNING -  88%|########7 | 350/400 [00:12<00:01, 26.54it/s]
+[2024-08-07T09:01:36.677+0000] {logging_mixin.py:188} WARNING -  89%|########9 | 356/400 [00:13<00:01, 31.74it/s]
+[2024-08-07T09:01:36.780+0000] {logging_mixin.py:188} WARNING -  90%|######### | 362/400 [00:13<00:01, 37.22it/s]
+[2024-08-07T09:01:36.883+0000] {logging_mixin.py:188} WARNING -  92%|#########2| 368/400 [00:13<00:00, 42.03it/s]
+[2024-08-07T09:01:36.999+0000] {logging_mixin.py:188} WARNING -  94%|#########3| 375/400 [00:13<00:00, 46.91it/s]
+[2024-08-07T09:01:37.571+0000] {logging_mixin.py:188} WARNING -  95%|#########5| 381/400 [00:13<00:00, 23.09it/s]
+[2024-08-07T09:01:37.687+0000] {logging_mixin.py:188} WARNING -  97%|#########7| 388/400 [00:14<00:00, 29.05it/s]
+[2024-08-07T09:01:37.793+0000] {logging_mixin.py:188} WARNING -  98%|#########8| 394/400 [00:14<00:00, 33.77it/s]
+[2024-08-07T09:01:37.900+0000] {logging_mixin.py:188} WARNING - 100%|##########| 400/400 [00:14<00:00, 38.25it/s]
+[2024-08-07T09:01:37.900+0000] {logging_mixin.py:188} WARNING - 100%|##########| 400/400 [00:14<00:00, 27.92it/s]
+[2024-08-07T09:01:43.146+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-07T09:01:43.147+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/naver_batch.py", line 266, in naver_info_manual
+    naver_fee = pd.read_excel('/data/shopai/dags/output/check_fee.xlsx')
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/excel/_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/excel/_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/excel/_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "/home/airflow/.local/lib/python3.10/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/data/shopai/dags/output/check_fee.xlsx'
+[2024-08-07T09:01:43.162+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=update_naver, task_id=update_naver, execution_date=20240806T000000, start_date=20240807T090121, end_date=20240807T090143
+[2024-08-07T09:01:43.186+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 23 for task update_naver ([Errno 2] No such file or directory: '/data/shopai/dags/output/check_fee.xlsx'; 193)
+[2024-08-07T09:01:43.218+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-08-07T09:01:43.265+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-07T09:01:43.272+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

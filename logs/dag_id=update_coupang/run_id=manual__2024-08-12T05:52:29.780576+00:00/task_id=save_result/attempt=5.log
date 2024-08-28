@@ -1,0 +1,727 @@
+[2024-08-12T05:58:45.190+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-12T05:58:45.211+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_coupang.save_result manual__2024-08-12T05:52:29.780576+00:00 [queued]>
+[2024-08-12T05:58:45.218+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_coupang.save_result manual__2024-08-12T05:52:29.780576+00:00 [queued]>
+[2024-08-12T05:58:45.219+0000] {taskinstance.py:2303} INFO - Starting attempt 5 of 5
+[2024-08-12T05:58:45.229+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): save_result> on 2024-08-12 05:52:29.780576+00:00
+[2024-08-12T05:58:45.239+0000] {standard_task_runner.py:63} INFO - Started process 188145 to run task
+[2024-08-12T05:58:45.242+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_coupang', 'save_result', 'manual__2024-08-12T05:52:29.780576+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/coupang_batch.py', '--cfg-path', '/tmp/tmpikfqopio']
+[2024-08-12T05:58:45.245+0000] {standard_task_runner.py:91} INFO - Job 182: Subtask save_result
+[2024-08-12T05:58:45.290+0000] {task_command.py:426} INFO - Running <TaskInstance: update_coupang.save_result manual__2024-08-12T05:52:29.780576+00:00 [running]> on host bcc9fe6b3d78
+[2024-08-12T05:58:45.377+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='zzioni' AIRFLOW_CTX_DAG_ID='update_coupang' AIRFLOW_CTX_TASK_ID='save_result' AIRFLOW_CTX_EXECUTION_DATE='2024-08-12T05:52:29.780576+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-12T05:52:29.780576+00:00'
+[2024-08-12T05:58:45.378+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-12T05:58:45.767+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/354 [00:00<?, ?it/s]
+[2024-08-12T05:58:46.685+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6757148290?itemId=15824187663&vendorItemId=3808867816
+[2024-08-12T05:58:49.779+0000] {logging_mixin.py:188} WARNING -   0%|          | 1/354 [00:04<23:35,  4.01s/it]
+[2024-08-12T05:58:50.476+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7116177395?itemId=17804673630&vendorItemId=84968713450
+[2024-08-12T05:58:52.565+0000] {logging_mixin.py:188} WARNING -   1%|          | 2/354 [00:06<19:18,  3.29s/it]
+[2024-08-12T05:58:53.139+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6981910247?itemId=17058137115&vendorItemId=73437814264
+[2024-08-12T05:58:54.229+0000] {logging_mixin.py:188} WARNING -   1%|          | 3/354 [00:08<14:54,  2.55s/it]
+[2024-08-12T05:58:55.170+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6113139428?itemId=21036360881&vendorItemId=84191410488
+[2024-08-12T05:58:56.277+0000] {logging_mixin.py:188} WARNING -   1%|1         | 4/354 [00:10<13:42,  2.35s/it]
+[2024-08-12T05:58:56.976+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6122491494?itemId=11615060388&vendorItemId=78889733794
+[2024-08-12T05:58:58.066+0000] {logging_mixin.py:188} WARNING -   1%|1         | 5/354 [00:12<12:29,  2.15s/it]
+[2024-08-12T05:58:58.962+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7935376671?itemId=21841954678&vendorItemId=88994513397
+[2024-08-12T05:59:00.047+0000] {logging_mixin.py:188} WARNING -   2%|1         | 6/354 [00:14<12:07,  2.09s/it]
+[2024-08-12T05:59:00.858+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7733232520?itemId=17115012532&vendorItemId=84144188775
+[2024-08-12T05:59:01.900+0000] {logging_mixin.py:188} WARNING -   2%|1         | 7/354 [00:16<11:38,  2.01s/it]
+[2024-08-12T05:59:02.637+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7935340780?itemId=21964465432&vendorItemId=89012194488
+[2024-08-12T05:59:03.719+0000] {logging_mixin.py:188} WARNING -   2%|2         | 8/354 [00:17<11:15,  1.95s/it]
+[2024-08-12T05:59:04.307+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7107773095?itemId=17759603119&vendorItemId=84923933150
+[2024-08-12T05:59:07.391+0000] {logging_mixin.py:188} WARNING -   3%|2         | 9/354 [00:21<14:18,  2.49s/it]
+[2024-08-12T05:59:08.272+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4792037872?itemId=6971273010&vendorItemId=74263667240
+[2024-08-12T05:59:10.355+0000] {logging_mixin.py:188} WARNING -   3%|2         | 10/354 [00:24<15:06,  2.64s/it]
+[2024-08-12T05:59:11.137+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1553223411?itemId=2656744685&vendorItemId=3001924247
+[2024-08-12T05:59:12.189+0000] {logging_mixin.py:188} WARNING -   3%|3         | 11/354 [00:26<13:39,  2.39s/it]
+[2024-08-12T05:59:12.767+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1239359?itemId=17670468470&vendorItemId=85329697455
+[2024-08-12T05:59:16.055+0000] {logging_mixin.py:188} WARNING -   3%|3         | 12/354 [00:30<16:10,  2.84s/it]
+[2024-08-12T05:59:16.775+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7116177395?itemId=17804673632&vendorItemId=84968713486&sourceType=srp_product_ads&clickEventId=119e45b0-2873-11ef-925f-1ce240bd8f42&korePlacement=15&koreSubPlacement=1&clickEventId=119e45b0-2873-11ef-925f-1ce240bd8f42&korePlacement=15&koreSubPlacement=1
+[2024-08-12T05:59:18.856+0000] {logging_mixin.py:188} WARNING -   4%|3         | 13/354 [00:33<16:04,  2.83s/it]
+[2024-08-12T05:59:19.475+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1239359?itemId=17991995015&vendorItemId=85158147587
+[2024-08-12T05:59:22.557+0000] {logging_mixin.py:188} WARNING -   4%|3         | 14/354 [00:36<17:31,  3.09s/it]
+[2024-08-12T05:59:23.198+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7940108189?itemId=22993510634&vendorItemId=88924881318
+[2024-08-12T05:59:26.277+0000] {logging_mixin.py:188} WARNING -   4%|4         | 15/354 [00:40<18:32,  3.28s/it]
+[2024-08-12T05:59:26.991+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311285?itemId=22125442970&vendorItemId=89172286662
+[2024-08-12T05:59:29.078+0000] {logging_mixin.py:188} WARNING -   5%|4         | 16/354 [00:43<17:40,  3.14s/it]
+[2024-08-12T05:59:29.904+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7958264259?itemId=21998168164&vendorItemId=89045722088
+[2024-08-12T05:59:31.990+0000] {logging_mixin.py:188} WARNING -   5%|4         | 17/354 [00:46<17:14,  3.07s/it]
+[2024-08-12T05:59:32.717+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133477?itemId=21020688121&vendorItemId=88083903339
+[2024-08-12T05:59:33.777+0000] {logging_mixin.py:188} WARNING -   5%|5         | 18/354 [00:48<15:01,  2.68s/it]
+[2024-08-12T05:59:34.596+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=22067221239&vendorItemId=88559811222
+[2024-08-12T05:59:36.641+0000] {logging_mixin.py:188} WARNING -   5%|5         | 19/354 [00:50<15:17,  2.74s/it]
+[2024-08-12T05:59:37.286+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133477?itemId=21020688127&vendorItemId=88083903357
+[2024-08-12T05:59:39.378+0000] {logging_mixin.py:188} WARNING -   6%|5         | 20/354 [00:53<15:14,  2.74s/it]
+[2024-08-12T05:59:40.052+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7927695825?itemId=22684131817&vendorItemId=90052024924
+[2024-08-12T05:59:41.138+0000] {logging_mixin.py:188} WARNING -   6%|5         | 21/354 [00:55<13:33,  2.44s/it]
+[2024-08-12T05:59:41.928+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=21506268295&vendorItemId=88559811594
+[2024-08-12T05:59:44.982+0000] {logging_mixin.py:188} WARNING -   6%|6         | 22/354 [00:59<15:50,  2.86s/it]
+[2024-08-12T05:59:45.771+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311246?itemId=22619811015&vendorItemId=89172286788
+[2024-08-12T05:59:47.875+0000] {logging_mixin.py:188} WARNING -   6%|6         | 23/354 [01:02<15:50,  2.87s/it]
+[2024-08-12T05:59:48.800+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7940108189?itemId=21877668624&vendorItemId=88925783494
+[2024-08-12T05:59:51.859+0000] {logging_mixin.py:188} WARNING -   7%|6         | 24/354 [01:06<17:38,  3.21s/it]
+[2024-08-12T05:59:52.856+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7324594536?itemId=18793037501&vendorItemId=85924068784
+[2024-08-12T05:59:54.947+0000] {logging_mixin.py:188} WARNING -   7%|7         | 25/354 [01:09<17:23,  3.17s/it]
+[2024-08-12T05:59:56.248+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7660148354?itemId=20662044647&vendorItemId=87405077405
+[2024-08-12T05:59:58.343+0000] {logging_mixin.py:188} WARNING -   7%|7         | 26/354 [01:12<17:42,  3.24s/it]
+[2024-08-12T05:59:59.201+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7958264259?itemId=22465493808&vendorItemId=89045722202
+[2024-08-12T06:00:02.243+0000] {logging_mixin.py:188} WARNING -   8%|7         | 27/354 [01:16<18:43,  3.44s/it]
+[2024-08-12T06:00:02.980+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7663342470?itemId=20632269506&vendorItemId=80676447939
+[2024-08-12T06:00:04.056+0000] {logging_mixin.py:188} WARNING -   8%|7         | 28/354 [01:18<16:01,  2.95s/it]
+[2024-08-12T06:00:04.804+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13421814228&vendorItemId=80676447919
+[2024-08-12T06:00:05.901+0000] {logging_mixin.py:188} WARNING -   8%|8         | 29/354 [01:20<14:10,  2.62s/it]
+[2024-08-12T06:00:06.943+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7941865733?itemId=22067223071&vendorItemId=88559811881
+[2024-08-12T06:00:09.027+0000] {logging_mixin.py:188} WARNING -   8%|8         | 30/354 [01:23<14:57,  2.77s/it]
+[2024-08-12T06:00:10.014+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=22348362280&vendorItemId=88559811849
+[2024-08-12T06:00:11.054+0000] {logging_mixin.py:188} WARNING -   9%|8         | 31/354 [01:25<13:42,  2.55s/it]
+[2024-08-12T06:00:11.780+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7663342470?itemId=20595000415&vendorItemId=80676448377
+[2024-08-12T06:00:13.050+0000] {logging_mixin.py:188} WARNING -   9%|9         | 32/354 [01:27<12:47,  2.38s/it]
+[2024-08-12T06:00:14.215+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=22310379633&vendorItemId=88559811432
+[2024-08-12T06:00:16.294+0000] {logging_mixin.py:188} WARNING -   9%|9         | 33/354 [01:30<14:07,  2.64s/it]
+[2024-08-12T06:00:17.042+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133477?itemId=21020688124&vendorItemId=88083903348
+[2024-08-12T06:00:19.117+0000] {logging_mixin.py:188} WARNING -  10%|9         | 34/354 [01:33<14:22,  2.70s/it]
+[2024-08-12T06:00:20.526+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7663342470?itemId=3846809923&vendorItemId=80676448355
+[2024-08-12T06:00:21.580+0000] {logging_mixin.py:188} WARNING -  10%|9         | 35/354 [01:35<13:57,  2.63s/it]
+[2024-08-12T06:00:22.202+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7941549170?itemId=21875027071&vendorItemId=88923153503&sourceType=srp_product_ads&clickEventId=ee1d5ba0-293d-11ef-855a-b4200a014655&korePlacement=15&koreSubPlacement=1&clickEventId=ee1d5ba0-293d-11ef-855a-b4200a014655&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:00:25.277+0000] {logging_mixin.py:188} WARNING -  10%|#         | 36/354 [01:39<15:37,  2.95s/it]
+[2024-08-12T06:00:26.305+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7871824636?itemId=22067223429&vendorItemId=88559811885
+[2024-08-12T06:00:28.396+0000] {logging_mixin.py:188} WARNING -  10%|#         | 37/354 [01:42<15:50,  3.00s/it]
+[2024-08-12T06:00:29.225+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7663342470?itemId=20620491691&vendorItemId=80676447931
+[2024-08-12T06:00:32.310+0000] {logging_mixin.py:188} WARNING -  11%|#         | 38/354 [01:46<17:14,  3.27s/it]
+[2024-08-12T06:00:33.180+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7871824636?itemId=21506268444&vendorItemId=88559811771
+[2024-08-12T06:00:34.242+0000] {logging_mixin.py:188} WARNING -  11%|#1        | 39/354 [01:48<15:04,  2.87s/it]
+[2024-08-12T06:00:34.979+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7757327077?itemId=21309133554&vendorItemId=88368703561
+[2024-08-12T06:00:37.065+0000] {logging_mixin.py:188} WARNING -  11%|#1        | 40/354 [01:51<14:56,  2.86s/it]
+[2024-08-12T06:00:38.256+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7871824636?itemId=21506268283&vendorItemId=88559811578
+[2024-08-12T06:00:39.310+0000] {logging_mixin.py:188} WARNING -  12%|#1        | 41/354 [01:53<13:56,  2.67s/it]
+[2024-08-12T06:00:40.136+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7871824673?itemId=21506268677&vendorItemId=88559811991
+[2024-08-12T06:00:41.177+0000] {logging_mixin.py:188} WARNING -  12%|#1        | 42/354 [01:55<12:38,  2.43s/it]
+[2024-08-12T06:00:42.012+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7941865733?itemId=22069887358&vendorItemId=88559811579
+[2024-08-12T06:00:45.101+0000] {logging_mixin.py:188} WARNING -  12%|#2        | 43/354 [01:59<14:55,  2.88s/it]
+[2024-08-12T06:00:46.059+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=22348362280&vendorItemId=88559811849
+[2024-08-12T06:00:47.154+0000] {logging_mixin.py:188} WARNING -  12%|#2        | 44/354 [02:01<13:35,  2.63s/it]
+[2024-08-12T06:00:48.502+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6513703101?itemId=11345795431&vendorItemId=78622221762
+[2024-08-12T06:00:51.581+0000] {logging_mixin.py:188} WARNING -  13%|#2        | 45/354 [02:05<16:19,  3.17s/it]
+[2024-08-12T06:00:52.515+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7324594536?itemId=19853511114&vendorItemId=85924068871
+[2024-08-12T06:00:55.609+0000] {logging_mixin.py:188} WARNING -  13%|#2        | 46/354 [02:09<17:35,  3.43s/it]
+[2024-08-12T06:00:56.360+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7833513026?itemId=9516107017&vendorItemId=88368703556
+[2024-08-12T06:00:57.448+0000] {logging_mixin.py:188} WARNING -  13%|#3        | 47/354 [02:11<15:05,  2.95s/it]
+[2024-08-12T06:00:58.766+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7867859869?itemId=22168828384&vendorItemId=88539611240
+[2024-08-12T06:01:01.834+0000] {logging_mixin.py:188} WARNING -  14%|#3        | 48/354 [02:16<17:14,  3.38s/it]
+[2024-08-12T06:01:02.473+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7941549170?itemId=21875696327&vendorItemId=88923819401
+[2024-08-12T06:01:04.555+0000] {logging_mixin.py:188} WARNING -  14%|#3        | 49/354 [02:18<16:10,  3.18s/it]
+[2024-08-12T06:01:06.027+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6513703101?itemId=11345796222&vendorItemId=78622221751
+[2024-08-12T06:01:08.135+0000] {logging_mixin.py:188} WARNING -  14%|#4        | 50/354 [02:22<16:43,  3.30s/it]
+[2024-08-12T06:01:09.078+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133477?itemId=21020688129&vendorItemId=88083903365
+[2024-08-12T06:01:10.347+0000] {logging_mixin.py:188} WARNING -  14%|#4        | 51/354 [02:24<15:01,  2.98s/it]
+[2024-08-12T06:01:10.906+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7635024187?itemId=20272273370&vendorItemId=87359297920&sourceType=srp_product_ads&clickEventId=883153e0-293e-11ef-a5bd-f8df3600f62c&korePlacement=15&koreSubPlacement=1&clickEventId=883153e0-293e-11ef-a5bd-f8df3600f62c&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:13.959+0000] {logging_mixin.py:188} WARNING -  15%|#4        | 52/354 [02:28<15:56,  3.17s/it]
+[2024-08-12T06:01:14.509+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/188227098?itemId=537550763&vendorItemId=4403776090
+[2024-08-12T06:01:15.588+0000] {logging_mixin.py:188} WARNING -  15%|#4        | 53/354 [02:29<13:34,  2.71s/it]
+[2024-08-12T06:01:16.430+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7455919074?itemId=18854921300&vendorItemId=85984112985
+[2024-08-12T06:01:17.499+0000] {logging_mixin.py:188} WARNING -  15%|#5        | 54/354 [02:31<12:20,  2.47s/it]
+[2024-08-12T06:01:18.489+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7420648438?itemId=19248537252&vendorItemId=85201539788
+[2024-08-12T06:01:21.548+0000] {logging_mixin.py:188} WARNING -  16%|#5        | 55/354 [02:35<14:39,  2.94s/it]
+[2024-08-12T06:01:22.351+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/94704984?itemId=292853614&vendorItemId=3719883624&sourceType=srp_product_ads&clickEventId=c3709190-2958-11ef-82c2-615a132deb88&korePlacement=15&koreSubPlacement=1&clickEventId=c3709190-2958-11ef-82c2-615a132deb88&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:25.431+0000] {logging_mixin.py:188} WARNING -  16%|#5        | 56/354 [02:39<16:00,  3.22s/it]
+[2024-08-12T06:01:26.441+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6812676322?itemId=18449938743&vendorItemId=70440100958
+[2024-08-12T06:01:27.529+0000] {logging_mixin.py:188} WARNING -  16%|#6        | 57/354 [02:41<14:17,  2.89s/it]
+[2024-08-12T06:01:28.367+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7060621760?itemId=17505420997&vendorItemId=84672727551&sourceType=srp_product_ads&clickEventId=def3b870-2958-11ef-8cd7-e11dac467a52&korePlacement=15&koreSubPlacement=1&clickEventId=def3b870-2958-11ef-8cd7-e11dac467a52&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:30.443+0000] {logging_mixin.py:188} WARNING -  16%|#6        | 58/354 [02:44<14:16,  2.89s/it]
+[2024-08-12T06:01:31.125+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/188227098?itemId=6706535406&vendorItemId=74000115996&sourceType=srp_product_ads&clickEventId=e20b58b0-2958-11ef-b65a-1b4949de0f3e&korePlacement=15&koreSubPlacement=1&clickEventId=e20b58b0-2958-11ef-b65a-1b4949de0f3e&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:32.203+0000] {logging_mixin.py:188} WARNING -  17%|#6        | 59/354 [02:46<12:33,  2.55s/it]
+[2024-08-12T06:01:32.837+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5568291680?itemId=8858919841&vendorItemId=76145644360
+[2024-08-12T06:01:33.925+0000] {logging_mixin.py:188} WARNING -  17%|#6        | 60/354 [02:48<11:17,  2.30s/it]
+[2024-08-12T06:01:34.473+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/252301180?itemId=8898991850&vendorItemId=76185622933
+[2024-08-12T06:01:37.553+0000] {logging_mixin.py:188} WARNING -  17%|#7        | 61/354 [02:51<13:11,  2.70s/it]
+[2024-08-12T06:01:38.264+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6723984076?itemId=17822148625&vendorItemId=82861422800&sourceType=srp_product_ads&clickEventId=22546880-2959-11ef-a922-77829ce82a25&korePlacement=15&koreSubPlacement=1&clickEventId=22546880-2959-11ef-a922-77829ce82a25&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:39.351+0000] {logging_mixin.py:188} WARNING -  18%|#7        | 62/354 [02:53<11:49,  2.43s/it]
+[2024-08-12T06:01:40.245+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6516820407?itemId=20932447642&vendorItemId=70917477592
+[2024-08-12T06:01:41.342+0000] {logging_mixin.py:188} WARNING -  18%|#7        | 63/354 [02:55<11:08,  2.30s/it]
+[2024-08-12T06:01:42.248+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7161273134?itemId=16163999581&vendorItemId=3020146853
+[2024-08-12T06:01:44.331+0000] {logging_mixin.py:188} WARNING -  18%|#8        | 64/354 [02:58<12:06,  2.51s/it]
+[2024-08-12T06:01:44.918+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6304061549?itemId=19879349364&vendorItemId=70308133916
+[2024-08-12T06:01:47.999+0000] {logging_mixin.py:188} WARNING -  18%|#8        | 65/354 [03:02<13:44,  2.85s/it]
+[2024-08-12T06:01:48.717+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6702057150?itemId=15527560731&vendorItemId=82746777680&sourceType=srp_product_ads&clickEventId=404756e0-2959-11ef-a50c-6e72dfab0eff&korePlacement=15&koreSubPlacement=1&clickEventId=404756e0-2959-11ef-a50c-6e72dfab0eff&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:01:50.811+0000] {logging_mixin.py:188} WARNING -  19%|#8        | 66/354 [03:05<13:38,  2.84s/it]
+[2024-08-12T06:01:52.008+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/81009162?itemId=12077024651&vendorItemId=88385996234&sourceType=srp_product_ads&clickEventId=467ba070-2959-11ef-a377-3318d222273a&korePlacement=15&koreSubPlacement=5&clickEventId=467ba070-2959-11ef-a377-3318d222273a&korePlacement=15&koreSubPlacement=5
+[2024-08-12T06:01:53.089+0000] {logging_mixin.py:188} WARNING -  19%|#8        | 67/354 [03:07<12:47,  2.67s/it]
+[2024-08-12T06:01:53.881+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5585414571?itemId=8940564797&vendorItemId=76227123200
+[2024-08-12T06:01:56.963+0000] {logging_mixin.py:188} WARNING -  19%|#9        | 68/354 [03:11<14:27,  3.03s/it]
+[2024-08-12T06:01:57.638+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5568291680?itemId=58244652&vendorItemId=3091339211
+[2024-08-12T06:01:58.725+0000] {logging_mixin.py:188} WARNING -  19%|#9        | 69/354 [03:12<12:35,  2.65s/it]
+[2024-08-12T06:01:59.281+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6809861982?itemId=16106231395&vendorItemId=83303417835
+[2024-08-12T06:02:00.360+0000] {logging_mixin.py:188} WARNING -  20%|#9        | 70/354 [03:14<11:06,  2.35s/it]
+[2024-08-12T06:02:01.200+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7788257386?itemId=21064589656&vendorItemId=82163908138
+[2024-08-12T06:02:04.446+0000] {logging_mixin.py:188} WARNING -  20%|##        | 71/354 [03:18<13:31,  2.87s/it]
+[2024-08-12T06:02:05.216+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7432207714?itemId=19646586881&vendorItemId=81455123068
+[2024-08-12T06:02:06.298+0000] {logging_mixin.py:188} WARNING -  20%|##        | 72/354 [03:20<12:02,  2.56s/it]
+[2024-08-12T06:02:06.986+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7870327392?itemId=21498343525&vendorItemId=3054914004
+[2024-08-12T06:02:08.046+0000] {logging_mixin.py:188} WARNING -  21%|##        | 73/354 [03:22<10:51,  2.32s/it]
+[2024-08-12T06:02:09.033+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6572547685?itemId=759760505&vendorItemId=4909733841
+[2024-08-12T06:02:11.122+0000] {logging_mixin.py:188} WARNING -  21%|##        | 74/354 [03:25<11:52,  2.55s/it]
+[2024-08-12T06:02:11.764+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7706719749?itemId=20647772345&vendorItemId=87721121784
+[2024-08-12T06:02:14.851+0000] {logging_mixin.py:188} WARNING -  21%|##1       | 75/354 [03:29<13:29,  2.90s/it]
+[2024-08-12T06:02:15.643+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7634899524?itemId=15759665651&vendorItemId=82973145231&sourceType=srp_product_ads&clickEventId=8c0d1330-2959-11ef-b86e-b1e04bbe4510&korePlacement=15&koreSubPlacement=1&clickEventId=8c0d1330-2959-11ef-b86e-b1e04bbe4510&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:02:16.729+0000] {logging_mixin.py:188} WARNING -  21%|##1       | 76/354 [03:30<12:01,  2.59s/it]
+[2024-08-12T06:02:17.499+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6820503747?itemId=16164044199&vendorItemId=3054959673
+[2024-08-12T06:02:18.579+0000] {logging_mixin.py:188} WARNING -  22%|##1       | 77/354 [03:32<10:56,  2.37s/it]
+[2024-08-12T06:02:19.547+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7219834951?itemId=18292683275&vendorItemId=85438342924
+[2024-08-12T06:02:22.610+0000] {logging_mixin.py:188} WARNING -  22%|##2       | 78/354 [03:36<13:11,  2.87s/it]
+[2024-08-12T06:02:23.530+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6516820407?itemId=20625014760&vendorItemId=87699214931
+[2024-08-12T06:02:24.580+0000] {logging_mixin.py:188} WARNING -  22%|##2       | 79/354 [03:38<11:54,  2.60s/it]
+[2024-08-12T06:02:25.343+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1833339302?itemId=18295739006&vendorItemId=76519397582
+[2024-08-12T06:02:26.422+0000] {logging_mixin.py:188} WARNING -  23%|##2       | 80/354 [03:40<10:49,  2.37s/it]
+[2024-08-12T06:02:26.966+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6971765743?itemId=18047558774&vendorItemId=76679799929
+[2024-08-12T06:02:30.009+0000] {logging_mixin.py:188} WARNING -  23%|##2       | 81/354 [03:44<12:27,  2.74s/it]
+[2024-08-12T06:02:30.782+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6971765743?itemId=17006633309&vendorItemId=85229267818
+[2024-08-12T06:02:31.812+0000] {logging_mixin.py:188} WARNING -  23%|##3       | 82/354 [03:46<11:08,  2.46s/it]
+[2024-08-12T06:02:32.517+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6313392821?itemId=13116497138&vendorItemId=80376214161
+[2024-08-12T06:02:35.588+0000] {logging_mixin.py:188} WARNING -  23%|##3       | 83/354 [03:49<12:52,  2.85s/it]
+[2024-08-12T06:02:36.412+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7656005168?itemId=20383435391&vendorItemId=81808802410
+[2024-08-12T06:02:39.488+0000] {logging_mixin.py:188} WARNING -  24%|##3       | 84/354 [03:53<14:14,  3.17s/it]
+[2024-08-12T06:02:40.181+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7266168952?itemId=18655159880&vendorItemId=85787841385
+[2024-08-12T06:02:42.256+0000] {logging_mixin.py:188} WARNING -  24%|##4       | 85/354 [03:56<13:39,  3.05s/it]
+[2024-08-12T06:02:42.817+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7219563869?itemId=18291512697&vendorItemId=85437213913
+[2024-08-12T06:02:44.894+0000] {logging_mixin.py:188} WARNING -  24%|##4       | 86/354 [03:59<13:03,  2.92s/it]
+[2024-08-12T06:02:45.459+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5191734929?itemId=7210135506&vendorItemId=74501677392
+[2024-08-12T06:02:47.546+0000] {logging_mixin.py:188} WARNING -  25%|##4       | 87/354 [04:01<12:38,  2.84s/it]
+[2024-08-12T06:02:48.165+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2045552663?itemId=3477601465&vendorItemId=71463917079
+[2024-08-12T06:02:50.244+0000] {logging_mixin.py:188} WARNING -  25%|##4       | 88/354 [04:04<12:24,  2.80s/it]
+[2024-08-12T06:02:51.143+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8075350478?itemId=22746445714&vendorItemId=89781231910
+[2024-08-12T06:02:52.176+0000] {logging_mixin.py:188} WARNING -  25%|##5       | 89/354 [04:06<11:12,  2.54s/it]
+[2024-08-12T06:02:52.853+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7797903312?itemId=21112057020&vendorItemId=3390498648
+[2024-08-12T06:02:53.891+0000] {logging_mixin.py:188} WARNING -  25%|##5       | 90/354 [04:08<10:05,  2.29s/it]
+[2024-08-12T06:02:54.700+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5757160570?itemId=9739294531&vendorItemId=77023049202
+[2024-08-12T06:02:56.757+0000] {logging_mixin.py:188} WARNING -  26%|##5       | 91/354 [04:10<10:48,  2.46s/it]
+[2024-08-12T06:02:57.276+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1472784868?itemId=2531555342&vendorItemId=70524322261
+[2024-08-12T06:03:00.517+0000] {logging_mixin.py:188} WARNING -  26%|##5       | 92/354 [04:14<12:27,  2.85s/it]
+[2024-08-12T06:03:01.130+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7180381059?itemId=18108531729&vendorItemId=86636642394
+[2024-08-12T06:03:03.174+0000] {logging_mixin.py:188} WARNING -  26%|##6       | 93/354 [04:17<12:09,  2.79s/it]
+[2024-08-12T06:03:03.769+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5202278238?itemId=7253197234&vendorItemId=74544628040
+[2024-08-12T06:03:06.801+0000] {logging_mixin.py:188} WARNING -  27%|##6       | 94/354 [04:21<13:11,  3.04s/it]
+[2024-08-12T06:03:07.383+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/81605603
+[2024-08-12T06:03:09.451+0000] {logging_mixin.py:188} WARNING -  27%|##6       | 95/354 [04:23<12:37,  2.93s/it]
+[2024-08-12T06:03:10.191+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/6569974428?itemId=19529915021
+[2024-08-12T06:03:13.222+0000] {logging_mixin.py:188} WARNING -  27%|##7       | 96/354 [04:27<13:40,  3.18s/it]
+[2024-08-12T06:03:13.879+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7672970906?itemId=20473567039&vendorItemId=87552766953
+[2024-08-12T06:03:14.945+0000] {logging_mixin.py:188} WARNING -  27%|##7       | 97/354 [04:29<11:44,  2.74s/it]
+[2024-08-12T06:03:15.481+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7940046972?itemId=21866670983&vendorItemId=88914853528
+[2024-08-12T06:03:18.566+0000] {logging_mixin.py:188} WARNING -  28%|##7       | 98/354 [04:32<12:49,  3.01s/it]
+[2024-08-12T06:03:19.190+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7939447417?itemId=21863090973&vendorItemId=88911286397
+[2024-08-12T06:03:21.251+0000] {logging_mixin.py:188} WARNING -  28%|##7       | 99/354 [04:35<12:21,  2.91s/it]
+[2024-08-12T06:03:21.899+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7757942519?itemId=22946438358&vendorItemId=89980748615
+[2024-08-12T06:03:24.973+0000] {logging_mixin.py:188} WARNING -  28%|##8       | 100/354 [04:39<13:20,  3.15s/it]
+[2024-08-12T06:03:26.016+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/6113139428?itemId=21036360882
+[2024-08-12T06:03:28.116+0000] {logging_mixin.py:188} WARNING -  29%|##8       | 101/354 [04:42<13:17,  3.15s/it]
+[2024-08-12T06:03:28.924+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7047433861?itemId=17443781043
+[2024-08-12T06:03:30.974+0000] {logging_mixin.py:188} WARNING -  29%|##8       | 102/354 [04:45<12:51,  3.06s/it]
+[2024-08-12T06:03:31.994+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6113139428?itemId=21036360883&vendorItemId=78809898534&sourceType=srp_product_ads&clickEventId=1d1ce370-2872-11ef-8af4-4336966842ca&korePlacement=15&koreSubPlacement=1&clickEventId=1d1ce370-2872-11ef-8af4-4336966842ca&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:03:35.086+0000] {logging_mixin.py:188} WARNING -  29%|##9       | 103/354 [04:49<14:07,  3.38s/it]
+[2024-08-12T06:03:36.194+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7308156780?itemId=11615060339
+[2024-08-12T06:03:39.257+0000] {logging_mixin.py:188} WARNING -  29%|##9       | 104/354 [04:53<15:03,  3.62s/it]
+[2024-08-12T06:03:39.955+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7748336955?itemId=20864483578&vendorItemId=87931858031
+[2024-08-12T06:03:42.035+0000] {logging_mixin.py:188} WARNING -  30%|##9       | 105/354 [04:56<13:57,  3.36s/it]
+[2024-08-12T06:03:42.947+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7055016170?itemId=17477124809&vendorItemId=84644698816
+[2024-08-12T06:03:46.031+0000] {logging_mixin.py:188} WARNING -  30%|##9       | 106/354 [05:00<14:41,  3.55s/it]
+[2024-08-12T06:03:46.724+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/204402279?itemId=20176602386
+[2024-08-12T06:03:48.795+0000] {logging_mixin.py:188} WARNING -  30%|###       | 107/354 [05:03<13:39,  3.32s/it]
+[2024-08-12T06:03:49.408+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6368578455?itemId=13478707232&vendorItemId=80732963064
+[2024-08-12T06:03:50.484+0000] {logging_mixin.py:188} WARNING -  31%|###       | 108/354 [05:04<11:35,  2.83s/it]
+[2024-08-12T06:03:51.232+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5766328418?itemId=9782812684&vendorItemId=77066436667
+[2024-08-12T06:03:52.314+0000] {logging_mixin.py:188} WARNING -  31%|###       | 109/354 [05:06<10:19,  2.53s/it]
+[2024-08-12T06:03:52.999+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7047433861?itemId=17443781115&vendorItemId=84612405288&sourceType=srp_product_ads&clickEventId=65139660-2872-11ef-b008-6ed521c6b635&korePlacement=15&koreSubPlacement=1&clickEventId=65139660-2872-11ef-b008-6ed521c6b635&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:03:55.033+0000] {logging_mixin.py:188} WARNING -  31%|###1      | 110/354 [05:09<10:30,  2.59s/it]
+[2024-08-12T06:03:58.690+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7055016168?itemId=17477124791
+[2024-08-12T06:03:59.775+0000] {logging_mixin.py:188} WARNING -  31%|###1      | 111/354 [05:14<13:05,  3.23s/it]
+[2024-08-12T06:04:00.511+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7055016170?itemId=17477124805&vendorItemId=84644698802
+[2024-08-12T06:04:02.549+0000] {logging_mixin.py:188} WARNING -  32%|###1      | 112/354 [05:16<12:29,  3.10s/it]
+[2024-08-12T06:04:03.230+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7055016170?itemId=17477124809&vendorItemId=84644698816
+[2024-08-12T06:04:04.309+0000] {logging_mixin.py:188} WARNING -  32%|###1      | 113/354 [05:18<10:49,  2.69s/it]
+[2024-08-12T06:04:06.386+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7308156780?itemId=18716568196
+[2024-08-12T06:04:07.472+0000] {logging_mixin.py:188} WARNING -  32%|###2      | 114/354 [05:21<11:20,  2.84s/it]
+[2024-08-12T06:04:09.316+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7308156780?itemId=18716584297&vendorItemId=84191425171
+[2024-08-12T06:04:10.357+0000] {logging_mixin.py:188} WARNING -  32%|###2      | 115/354 [05:24<11:21,  2.85s/it]
+[2024-08-12T06:04:11.858+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6122491494?itemId=11615060393&vendorItemId=78889733809&sourceType=srp_product_ads&clickEventId=44dea740-2872-11ef-9dab-b3801b2aa06e&korePlacement=15&koreSubPlacement=1&clickEventId=44dea740-2872-11ef-9dab-b3801b2aa06e&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:04:13.071+0000] {logging_mixin.py:188} WARNING -  33%|###2      | 116/354 [05:27<11:08,  2.81s/it]
+[2024-08-12T06:04:14.612+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7748336955?itemId=23251855263&vendorItemId=90284260532
+[2024-08-12T06:04:15.693+0000] {logging_mixin.py:188} WARNING -  33%|###3      | 117/354 [05:29<10:52,  2.75s/it]
+[2024-08-12T06:04:17.605+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7748336955?itemId=21610729283
+[2024-08-12T06:04:18.655+0000] {logging_mixin.py:188} WARNING -  33%|###3      | 118/354 [05:32<11:04,  2.82s/it]
+[2024-08-12T06:04:20.354+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7679414205?itemId=21098622436&vendorItemId=87924900157&sourceType=srp_product_ads&clickEventId=88b7bba0-2872-11ef-a803-81ac12386367&korePlacement=15&koreSubPlacement=1&clickEventId=88b7bba0-2872-11ef-a803-81ac12386367&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:04:21.457+0000] {logging_mixin.py:188} WARNING -  34%|###3      | 119/354 [05:35<11:00,  2.81s/it]
+[2024-08-12T06:04:22.889+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7783940106?itemId=21043474930&vendorItemId=82986797842
+[2024-08-12T06:04:24.970+0000] {logging_mixin.py:188} WARNING -  34%|###3      | 120/354 [05:39<11:47,  3.02s/it]
+[2024-08-12T06:04:26.516+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7783940106?itemId=21043483319
+[2024-08-12T06:04:28.551+0000] {logging_mixin.py:188} WARNING -  34%|###4      | 121/354 [05:42<12:23,  3.19s/it]
+[2024-08-12T06:04:29.966+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6872744623?itemId=17044621144&vendorItemId=84965214713
+[2024-08-12T06:04:31.046+0000] {logging_mixin.py:188} WARNING -  34%|###4      | 122/354 [05:45<11:31,  2.98s/it]
+[2024-08-12T06:04:32.416+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6872744614?itemId=16446654065&vendorItemId=83637293863
+[2024-08-12T06:04:34.499+0000] {logging_mixin.py:188} WARNING -  35%|###4      | 123/354 [05:48<12:01,  3.12s/it]
+[2024-08-12T06:04:36.005+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7047433860?itemId=18039522534&vendorItemId=85193872486
+[2024-08-12T06:04:37.092+0000] {logging_mixin.py:188} WARNING -  35%|###5      | 124/354 [05:51<11:21,  2.96s/it]
+[2024-08-12T06:04:38.598+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4389414326?itemId=5200393251&vendorItemId=70713650145
+[2024-08-12T06:04:40.646+0000] {logging_mixin.py:188} WARNING -  35%|###5      | 125/354 [05:54<11:59,  3.14s/it]
+[2024-08-12T06:04:42.212+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/6840036078?itemId=21364737807
+[2024-08-12T06:04:45.291+0000] {logging_mixin.py:188} WARNING -  36%|###5      | 126/354 [05:59<13:39,  3.59s/it]
+[2024-08-12T06:04:47.002+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7434541344?itemId=19317659259
+[2024-08-12T06:04:48.085+0000] {logging_mixin.py:188} WARNING -  36%|###5      | 127/354 [06:02<12:41,  3.35s/it]
+[2024-08-12T06:04:49.735+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7434541344?itemId=19317712246
+[2024-08-12T06:04:50.816+0000] {logging_mixin.py:188} WARNING -  36%|###6      | 128/354 [06:05<11:55,  3.17s/it]
+[2024-08-12T06:04:52.399+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7434541344?itemId=19317728836&vendorItemId=3000213257&sourceType=srp_product_ads&clickEventId=73925f50-2872-11ef-8bb9-14befb562c3c&korePlacement=15&koreSubPlacement=1&clickEventId=73925f50-2872-11ef-8bb9-14befb562c3c&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:04:54.493+0000] {logging_mixin.py:188} WARNING -  36%|###6      | 129/354 [06:08<12:26,  3.32s/it]
+[2024-08-12T06:04:56.376+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/6493104250?itemId=14262665156
+[2024-08-12T06:04:59.475+0000] {logging_mixin.py:188} WARNING -  37%|###6      | 130/354 [06:13<14:15,  3.82s/it]
+[2024-08-12T06:05:00.893+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/3938072?itemId=19227533&vendorItemId=3028226936
+[2024-08-12T06:05:01.978+0000] {logging_mixin.py:188} WARNING -  37%|###7      | 131/354 [06:16<12:43,  3.42s/it]
+[2024-08-12T06:05:03.695+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7881685402?itemId=21556445521&vendorItemId=88609037339
+[2024-08-12T06:05:06.790+0000] {logging_mixin.py:188} WARNING -  37%|###7      | 132/354 [06:21<14:12,  3.84s/it]
+[2024-08-12T06:05:08.340+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7881685402?itemId=21556445470&vendorItemId=88609037317
+[2024-08-12T06:05:10.427+0000] {logging_mixin.py:188} WARNING -  38%|###7      | 133/354 [06:24<13:55,  3.78s/it]
+[2024-08-12T06:05:11.800+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7748991869?itemId=17968357958&vendorItemId=85125636478
+[2024-08-12T06:05:12.838+0000] {logging_mixin.py:188} WARNING -  38%|###7      | 134/354 [06:27<12:21,  3.37s/it]
+[2024-08-12T06:05:16.323+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311285?itemId=22125443090&vendorItemId=89172286787
+[2024-08-12T06:05:18.363+0000] {logging_mixin.py:188} WARNING -  38%|###8      | 135/354 [06:32<14:39,  4.02s/it]
+[2024-08-12T06:05:19.905+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311246?itemId=22125443114&vendorItemId=89172286807
+[2024-08-12T06:05:21.175+0000] {logging_mixin.py:188} WARNING -  38%|###8      | 136/354 [06:35<13:16,  3.65s/it]
+[2024-08-12T06:05:22.665+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311246?itemId=22407399412&vendorItemId=89172287184
+[2024-08-12T06:05:23.748+0000] {logging_mixin.py:188} WARNING -  39%|###8      | 137/354 [06:37<12:02,  3.33s/it]
+[2024-08-12T06:05:25.197+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311246?itemId=22125442912&vendorItemId=89172286621
+[2024-08-12T06:05:26.295+0000] {logging_mixin.py:188} WARNING -  39%|###8      | 138/354 [06:40<11:08,  3.10s/it]
+[2024-08-12T06:05:28.133+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7755568505?itemId=21339495349&vendorItemId=87968961854
+[2024-08-12T06:05:30.195+0000] {logging_mixin.py:188} WARNING -  39%|###9      | 139/354 [06:44<11:57,  3.34s/it]
+[2024-08-12T06:05:31.955+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7251778175?itemId=19185578729&vendorItemId=88838253491
+[2024-08-12T06:05:33.035+0000] {logging_mixin.py:188} WARNING -  40%|###9      | 140/354 [06:47<11:22,  3.19s/it]
+[2024-08-12T06:05:36.068+0000] {logging_mixin.py:188} INFO - https://coupang.com/vp/products/7927695825?itemId=21721693417
+[2024-08-12T06:05:37.104+0000] {logging_mixin.py:188} WARNING -  40%|###9      | 141/354 [06:51<12:15,  3.45s/it]
+[2024-08-12T06:05:37.527+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7273646569?itemId=23017875021&vendorItemId=88846395662
+[2024-08-12T06:05:40.565+0000] {logging_mixin.py:188} WARNING -  40%|####      | 142/354 [06:54<12:12,  3.45s/it]
+[2024-08-12T06:05:41.105+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8113548187?itemId=22848943241&vendorItemId=88846395710
+[2024-08-12T06:05:42.187+0000] {logging_mixin.py:188} WARNING -  40%|####      | 143/354 [06:56<10:12,  2.90s/it]
+[2024-08-12T06:05:42.575+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7273646569?itemId=23017894390&vendorItemId=88846395610
+[2024-08-12T06:05:45.655+0000] {logging_mixin.py:188} WARNING -  41%|####      | 144/354 [06:59<10:45,  3.07s/it]
+[2024-08-12T06:05:46.106+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8113548187?itemId=21797786516&vendorItemId=88846395606
+[2024-08-12T06:05:48.151+0000] {logging_mixin.py:188} WARNING -  41%|####      | 145/354 [07:02<10:06,  2.90s/it]
+[2024-08-12T06:05:48.553+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7273646569?itemId=22392371532&vendorItemId=88846395696
+[2024-08-12T06:05:49.632+0000] {logging_mixin.py:188} WARNING -  41%|####1     | 146/354 [07:03<08:34,  2.47s/it]
+[2024-08-12T06:05:50.164+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7927695903?itemId=22392628049&vendorItemId=88846395717
+[2024-08-12T06:05:52.246+0000] {logging_mixin.py:188} WARNING -  42%|####1     | 147/354 [07:06<08:40,  2.52s/it]
+[2024-08-12T06:05:52.734+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6610553516?itemId=14988013896&vendorItemId=82211000542
+[2024-08-12T06:05:53.832+0000] {logging_mixin.py:188} WARNING -  42%|####1     | 148/354 [07:08<07:40,  2.24s/it]
+[2024-08-12T06:05:54.273+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/198248953?itemId=12684715901&vendorItemId=4562699797
+[2024-08-12T06:05:55.359+0000] {logging_mixin.py:188} WARNING -  42%|####2     | 149/354 [07:09<06:54,  2.02s/it]
+[2024-08-12T06:05:55.663+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133442?itemId=21488210551&vendorItemId=88083903209&sourceType=srp_product_ads&clickEventId=24b9c400-293e-11ef-b491-2f54a51a1022&korePlacement=15&koreSubPlacement=1&clickEventId=24b9c400-293e-11ef-b491-2f54a51a1022&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:05:58.742+0000] {logging_mixin.py:188} WARNING -  42%|####2     | 150/354 [07:12<08:16,  2.43s/it]
+[2024-08-12T06:05:59.093+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133442?itemId=21020687990&vendorItemId=88083903216&sourceType=srp_product_ads&clickEventId=7aa321f0-293d-11ef-9cfc-34bdcf978880&korePlacement=15&koreSubPlacement=1&clickEventId=7aa321f0-293d-11ef-9cfc-34bdcf978880&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:06:00.174+0000] {logging_mixin.py:188} WARNING -  43%|####2     | 151/354 [07:14<07:12,  2.13s/it]
+[2024-08-12T06:06:00.502+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7779133442?itemId=21020687992&vendorItemId=88083903226&sourceType=srp_product_ads&clickEventId=74d82180-293d-11ef-8ca5-6af333e7fb8b&korePlacement=15&koreSubPlacement=1&clickEventId=74d82180-293d-11ef-8ca5-6af333e7fb8b&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:06:03.584+0000] {logging_mixin.py:188} WARNING -  43%|####2     | 152/354 [07:17<08:28,  2.52s/it]
+[2024-08-12T06:06:03.976+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7940108189?itemId=22319067168&vendorItemId=88915167462
+[2024-08-12T06:06:07.060+0000] {logging_mixin.py:188} WARNING -  43%|####3     | 153/354 [07:21<09:23,  2.80s/it]
+[2024-08-12T06:06:07.418+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4782250879?itemId=21309133557&vendorItemId=88368703560
+[2024-08-12T06:06:08.456+0000] {logging_mixin.py:188} WARNING -  44%|####3     | 154/354 [07:22<07:56,  2.38s/it]
+[2024-08-12T06:06:08.780+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6215173156?itemId=20538139397&vendorItemId=71261758945
+[2024-08-12T06:06:10.814+0000] {logging_mixin.py:188} WARNING -  44%|####3     | 155/354 [07:25<07:52,  2.37s/it]
+[2024-08-12T06:06:11.245+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6215173156?itemId=3274750581&vendorItemId=71261759038
+[2024-08-12T06:06:12.507+0000] {logging_mixin.py:188} WARNING -  44%|####4     | 156/354 [07:26<07:09,  2.17s/it]
+[2024-08-12T06:06:12.851+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1414726540?itemId=2451389139&vendorItemId=70445034559
+[2024-08-12T06:06:14.894+0000] {logging_mixin.py:188} WARNING -  44%|####4     | 157/354 [07:29<07:20,  2.23s/it]
+[2024-08-12T06:06:15.277+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7660148354?itemId=20914587841&vendorItemId=87487958418&sourceType=srp_product_ads&clickEventId=8640c3f0-293d-11ef-af5b-709fcdf59509&korePlacement=15&koreSubPlacement=1&clickEventId=8640c3f0-293d-11ef-af5b-709fcdf59509&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:06:18.329+0000] {logging_mixin.py:188} WARNING -  45%|####4     | 158/354 [07:32<08:28,  2.60s/it]
+[2024-08-12T06:06:18.755+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7660148354?itemId=20194219469&vendorItemId=87405077397
+[2024-08-12T06:06:21.804+0000] {logging_mixin.py:188} WARNING -  45%|####4     | 159/354 [07:36<09:17,  2.86s/it]
+[2024-08-12T06:06:22.710+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6572547685?itemId=20271557145&vendorItemId=81999310148
+[2024-08-12T06:06:24.771+0000] {logging_mixin.py:188} WARNING -  45%|####5     | 160/354 [07:39<09:20,  2.89s/it]
+[2024-08-12T06:06:25.130+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7744438921?itemId=20844108259&vendorItemId=72028213256
+[2024-08-12T06:06:27.208+0000] {logging_mixin.py:188} WARNING -  45%|####5     | 161/354 [07:41<08:51,  2.75s/it]
+[2024-08-12T06:06:27.669+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/100426766?itemId=306694248&vendorItemId=3756356877
+[2024-08-12T06:06:30.747+0000] {logging_mixin.py:188} WARNING -  46%|####5     | 162/354 [07:44<09:34,  2.99s/it]
+[2024-08-12T06:06:31.538+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4326590246?itemId=19106022171&vendorItemId=3131253799
+[2024-08-12T06:06:33.581+0000] {logging_mixin.py:188} WARNING -  46%|####6     | 163/354 [07:47<09:22,  2.94s/it]
+[2024-08-12T06:06:34.109+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/15040202?itemId=20065127168&vendorItemId=87074035560
+[2024-08-12T06:06:35.165+0000] {logging_mixin.py:188} WARNING -  46%|####6     | 164/354 [07:49<08:01,  2.54s/it]
+[2024-08-12T06:06:36.529+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/15040202?itemId=18551308638&vendorItemId=74491127931
+[2024-08-12T06:06:39.610+0000] {logging_mixin.py:188} WARNING -  47%|####6     | 165/354 [07:53<09:47,  3.11s/it]
+[2024-08-12T06:06:41.801+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6372190566?itemId=13502298555&vendorItemId=3062694058
+[2024-08-12T06:06:44.879+0000] {logging_mixin.py:188} WARNING -  47%|####6     | 166/354 [07:59<11:46,  3.76s/it]
+[2024-08-12T06:06:46.315+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6809861982?itemId=19421953413&vendorItemId=86533408850
+[2024-08-12T06:06:49.364+0000] {logging_mixin.py:188} WARNING -  47%|####7     | 167/354 [08:03<12:23,  3.97s/it]
+[2024-08-12T06:06:51.480+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6489890342?itemId=14243089191&vendorItemId=4909734100
+[2024-08-12T06:06:53.520+0000] {logging_mixin.py:188} WARNING -  47%|####7     | 168/354 [08:07<12:29,  4.03s/it]
+[2024-08-12T06:06:54.912+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7235476930?itemId=8946644362&vendorItemId=4040534019
+[2024-08-12T06:06:57.963+0000] {logging_mixin.py:188} WARNING -  48%|####7     | 169/354 [08:12<12:48,  4.15s/it]
+[2024-08-12T06:06:59.455+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7993548195?itemId=22226559955&vendorItemId=89272482385
+[2024-08-12T06:07:00.543+0000] {logging_mixin.py:188} WARNING -  48%|####8     | 170/354 [08:14<11:17,  3.68s/it]
+[2024-08-12T06:07:02.156+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1425500493?itemId=17861079128&vendorItemId=70859134256
+[2024-08-12T06:07:05.242+0000] {logging_mixin.py:188} WARNING -  48%|####8     | 171/354 [08:19<12:09,  3.99s/it]
+[2024-08-12T06:07:06.771+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7881910490?itemId=21557487145&vendorItemId=88610070055
+[2024-08-12T06:07:08.865+0000] {logging_mixin.py:188} WARNING -  49%|####8     | 172/354 [08:23<11:45,  3.88s/it]
+[2024-08-12T06:07:10.489+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7584393542?itemId=20027563282&vendorItemId=87124180503
+[2024-08-12T06:07:11.588+0000] {logging_mixin.py:188} WARNING -  49%|####8     | 173/354 [08:25<10:39,  3.53s/it]
+[2024-08-12T06:07:13.324+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8059364752?itemId=22634263413&vendorItemId=3628591521
+[2024-08-12T06:07:16.379+0000] {logging_mixin.py:188} WARNING -  49%|####9     | 174/354 [08:30<11:43,  3.91s/it]
+[2024-08-12T06:07:18.614+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/81009162?itemId=19720334420&vendorItemId=3628591485&sourceType=srp_product_ads&clickEventId=faace370-2958-11ef-81aa-224114451025&korePlacement=15&koreSubPlacement=1&clickEventId=faace370-2958-11ef-81aa-224114451025&korePlacement=15&koreSubPlacement=1
+[2024-08-12T06:07:21.671+0000] {logging_mixin.py:188} WARNING -  49%|####9     | 175/354 [08:35<12:53,  4.32s/it]
+[2024-08-12T06:07:22.402+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7870377973?itemId=21203367102&vendorItemId=3066423351
+[2024-08-12T06:07:24.483+0000] {logging_mixin.py:188} WARNING -  50%|####9     | 176/354 [08:38<11:28,  3.87s/it]
+[2024-08-12T06:07:25.105+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/332455446?itemId=1062168978&vendorItemId=5541522217
+[2024-08-12T06:07:27.326+0000] {logging_mixin.py:188} WARNING -  50%|#####     | 177/354 [08:41<10:30,  3.56s/it]
+[2024-08-12T06:07:27.890+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6194734500?itemId=12254001349&vendorItemId=79524604109
+[2024-08-12T06:07:28.924+0000] {logging_mixin.py:188} WARNING -  50%|#####     | 178/354 [08:43<08:43,  2.97s/it]
+[2024-08-12T06:07:29.578+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4933219163?itemId=6486038342&vendorItemId=73780299406
+[2024-08-12T06:07:32.668+0000] {logging_mixin.py:188} WARNING -  51%|#####     | 179/354 [08:46<09:20,  3.20s/it]
+[2024-08-12T06:07:33.355+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7455532433?itemId=19420303620&vendorItemId=86531819724
+[2024-08-12T06:07:35.387+0000] {logging_mixin.py:188} WARNING -  51%|#####     | 180/354 [08:49<08:52,  3.06s/it]
+[2024-08-12T06:07:36.095+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7047433861?itemId=10491052263&vendorItemId=84612405301&sourceType=srp_product_ads&clickEventId=0c26f1d0-2dc9-11ef-a7c0-0c652f45c474&korePlacement=15&koreSubPlacement=9&q=%EC%95%84%EC%9D%B4%EC%97%A0%EB%A7%88%EB%8D%94+1%EB%8B%A8%EA%B3%84+800g+1%EA%B0%9C&itemsCount=36&searchId=b30c5a322cf44695bbe52569cd91af72&rank=8&isAddedCart=
+[2024-08-12T06:07:37.182+0000] {logging_mixin.py:188} WARNING -  51%|#####1    | 181/354 [08:51<07:43,  2.68s/it]
+[2024-08-12T06:07:38.019+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6973174583?itemId=17801144232&vendorItemId=84965214719&q=%ED%8C%8C%EC%8A%A4%ED%87%B4%EB%A5%B4+%EC%9C%84%EB%93%9C%EB%A7%98+%EC%A0%9C%EC%99%95+2%EB%8B%A8%EA%B3%84+750g+3%EA%B0%9C&itemsCount=36&searchId=d09d1dc517474fecbcd64c436b1d687a&rank=1&isAddedCart=
+[2024-08-12T06:07:40.100+0000] {logging_mixin.py:188} WARNING -  51%|#####1    | 182/354 [08:54<07:53,  2.75s/it]
+[2024-08-12T06:07:41.003+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7308156780?itemId=18716589302&vendorItemId=84191425745&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EB%AA%85%EC%9E%91+2FL+2%EB%8B%A8%EA%B3%84+800g+4%EA%B0%9C&itemsCount=36&searchId=2423327252214938830ed964cb06014c&rank=12&isAddedCart=
+[2024-08-12T06:07:42.088+0000] {logging_mixin.py:188} WARNING -  52%|#####1    | 183/354 [08:56<07:11,  2.52s/it]
+[2024-08-12T06:07:42.918+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7733156491?itemId=17801144229&vendorItemId=84965214718&pickType=COU_PICK&q=%ED%8C%8C%EC%8A%A4%ED%87%B4%EB%A5%B4+%EC%9C%84%EB%93%9C%EB%A7%98+%EC%A0%9C%EC%99%95+1%EB%8B%A8%EA%B3%84+750g+3%EA%B0%9C&itemsCount=36&searchId=47a7336a7859404ea54a4e8d22c86af4&rank=1&isAddedCart=
+[2024-08-12T06:07:46.002+0000] {logging_mixin.py:188} WARNING -  52%|#####1    | 184/354 [09:00<08:19,  2.94s/it]
+[2024-08-12T06:07:46.781+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6122491494?itemId=12594434240&vendorItemId=84191463770&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EB%AA%85%EC%9E%91+2FL+3%EB%8B%A8%EA%B3%84+800g+2%EA%B0%9C&itemsCount=36&searchId=6f7b3930381a4c95b27594ea1ab71a8e&rank=3&isAddedCart=
+[2024-08-12T06:07:47.864+0000] {logging_mixin.py:188} WARNING -  52%|#####2    | 185/354 [09:02<07:22,  2.62s/it]
+[2024-08-12T06:07:48.512+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7298200643?itemId=17443781118&vendorItemId=84612405294&q=%EB%82%A8%EC%96%91+%EC%9E%84%ED%8E%98%EB%A6%AC%EC%96%BC+XO+3%EB%8B%A8%EA%B3%84+800g+3%EA%B0%9C&itemsCount=36&searchId=4c0ede7b8e094ecdadf4a9700a9185d3&rank=2&isAddedCart=
+[2024-08-12T06:07:50.589+0000] {logging_mixin.py:188} WARNING -  53%|#####2    | 186/354 [09:04<07:24,  2.65s/it]
+[2024-08-12T06:07:51.240+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7750218300?itemId=17910001913&vendorItemId=85193102017&q=%EB%82%A8%EC%96%91+%EC%9E%84%ED%8E%98%EB%A6%AC%EC%96%BC+XO+1%EB%8B%A8%EA%B3%84+800g+2%EA%B0%9C&itemsCount=35&searchId=a5adef9058654047ba862bdc6c60fbbc&rank=6&isAddedCart=
+[2024-08-12T06:07:53.322+0000] {logging_mixin.py:188} WARNING -  53%|#####2    | 187/354 [09:07<07:26,  2.67s/it]
+[2024-08-12T06:07:54.166+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4550724570?itemId=17909997655&vendorItemId=85072686890&pickType=COU_PICK&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%9C%A0%EA%B8%B0%EB%86%8D+%EA%B6%81+1%EB%8B%A8%EA%B3%84+800g+4%EA%B0%9C&itemsCount=36&searchId=2209b86bf9bd4df5a143a5bba806561c&rank=2&isAddedCart=
+[2024-08-12T06:07:57.207+0000] {logging_mixin.py:188} WARNING -  53%|#####3    | 188/354 [09:11<08:24,  3.04s/it]
+[2024-08-12T06:07:57.859+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7733156491?itemId=19632837755&vendorItemId=84098662167&q=%ED%8C%8C%EC%8A%A4%ED%87%B4%EB%A5%B4+%EC%9C%84%EB%93%9C%EB%A7%98+%EC%A0%9C%EC%99%95+1%EB%8B%A8%EA%B3%84+750g+1%EA%B0%9C&itemsCount=36&searchId=3d5b8428318c4285963c9c17391e73ea&rank=17&isAddedCart=
+[2024-08-12T06:07:59.952+0000] {logging_mixin.py:188} WARNING -  53%|#####3    | 189/354 [09:14<08:06,  2.95s/it]
+[2024-08-12T06:08:00.777+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7298200643?itemId=18039021034&vendorItemId=85193379182&src=1032035&spec=10305197&addtag=400&ctag=7298200643&lptag=I18039021034&itime=20240619182347&pageType=PRODUCT&pageValue=7298200643&wPcid=16980653682695622259975&wRef=www.enuri.com&wTime=20240619182347&redirect=landing&mcid=4901f24897e446ba9a48e4e4078fa890&isAddedCart=
+[2024-08-12T06:08:03.823+0000] {logging_mixin.py:188} WARNING -  54%|#####3    | 190/354 [09:18<08:49,  3.23s/it]
+[2024-08-12T06:08:05.643+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7308156780?itemId=15679655153&vendorItemId=84191461596&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EB%AA%85%EC%9E%91+2FL+2%EB%8B%A8%EA%B3%84+800g+6%EA%B0%9C&itemsCount=36&searchId=4ad27ac237004d18b2652ec252614ebd&rank=12&isAddedCart=
+[2024-08-12T06:08:07.735+0000] {logging_mixin.py:188} WARNING -  54%|#####3    | 191/354 [09:21<09:19,  3.43s/it]
+[2024-08-12T06:08:09.577+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/121869449?itemId=17910000086&vendorItemId=85072689131&q=%EB%A7%A4%EC%9D%BC+%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84+%EC%82%B0%EC%96%91%EB%B6%84%EC%9C%A0+2%EB%8B%A8%EA%B3%84+750g+2%EA%B0%9C&itemsCount=36&searchId=b3609461ac044e49b5d6ae35b712b1cf&rank=23&isAddedCart=
+[2024-08-12T06:08:10.640+0000] {logging_mixin.py:188} WARNING -  54%|#####4    | 192/354 [09:24<08:50,  3.27s/it]
+[2024-08-12T06:08:12.382+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7679414205?itemId=32025266&vendorItemId=88661988208&pickType=COU_PICK&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%84%BC%EC%84%9C%ED%8B%B0%EB%B8%8C+2%EB%8B%A8%EA%B3%84+900g+3%EA%B0%9C&itemsCount=36&searchId=9f677941d0864742bc1d794173ede3d2&rank=1&isAddedCart=
+[2024-08-12T06:08:14.479+0000] {logging_mixin.py:188} WARNING -  55%|#####4    | 193/354 [09:28<09:14,  3.44s/it]
+[2024-08-12T06:08:16.146+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7055016170?itemId=17477124805&vendorItemId=86818589301&q=%EB%82%A8%EC%96%91+%EC%95%84%EC%9D%B4%EC%97%A0%EB%A7%88%EB%8D%94+3%EB%8B%A8%EA%B3%84+800g+2%EA%B0%9C&itemsCount=36&searchId=43bd21e68572469eb0a9bb4c7346f797&rank=1&isAddedCart=
+[2024-08-12T06:08:18.184+0000] {logging_mixin.py:188} WARNING -  55%|#####4    | 194/354 [09:32<09:23,  3.52s/it]
+[2024-08-12T06:08:19.738+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4399509562?itemId=5224012128&vendorItemId=72533108384&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%9C%A0%EA%B8%B0%EB%86%8D+%EA%B6%81+2%EB%8B%A8%EA%B3%84+800g+3%EA%B0%9C&itemsCount=36&searchId=b9f87dde75ea423e8b9002387913d4cc&rank=13&isAddedCart=
+[2024-08-12T06:08:22.825+0000] {logging_mixin.py:188} WARNING -  55%|#####5    | 195/354 [09:37<10:13,  3.86s/it]
+[2024-08-12T06:08:24.421+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6872600378?itemId=17801144239&vendorItemId=84995744966&q=%ED%8C%8C%EC%8A%A4%ED%87%B4%EB%A5%B4+%EC%9C%84%EB%93%9C%EB%A7%98+2%EB%8B%A8%EA%B3%84+750g+3%EA%B0%9C&itemsCount=36&searchId=2475c53357064c84b0a2a5e01fa7a422&rank=3&isAddedCart=
+[2024-08-12T06:08:27.507+0000] {logging_mixin.py:188} WARNING -  55%|#####5    | 196/354 [09:41<10:48,  4.10s/it]
+[2024-08-12T06:08:29.093+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4399509562?itemId=6151105361&vendorItemId=84191483082&q=%EB%A7%A4%EC%9D%BC+%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%9C%A0%EA%B8%B0%EB%86%8D+%EA%B6%81+2%EB%8B%A8%EA%B3%84+800g+4%EA%B0%9C&itemsCount=36&searchId=2630e4fd39a543cba19f1113a032aada&rank=7&isAddedCart=
+[2024-08-12T06:08:32.188+0000] {logging_mixin.py:188} WARNING -  56%|#####5    | 197/354 [09:46<11:11,  4.28s/it]
+[2024-08-12T06:08:33.940+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13421814242&vendorItemId=80676447932&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%B3%B4%EC%86%8C%EB%B3%B4%EC%86%A1+%ED%8C%AC%ED%8B%B0%ED%98%95+5%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+92%EB%A7%A4&itemsCount=36&searchId=4ab38803a48741aa966dc57aff10f53d&rank=2&isAddedCart=
+[2024-08-12T06:08:37.199+0000] {logging_mixin.py:188} WARNING -  56%|#####5    | 198/354 [09:51<11:41,  4.50s/it]
+[2024-08-12T06:08:38.899+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13421814242&vendorItemId=85322265530&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%B3%B4%EC%86%8C%EB%B3%B4%EC%86%A1+%ED%8C%AC%ED%8B%B0%ED%98%95+5%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+184%EB%A7%A4&itemsCount=36&searchId=a2293836043849c8b0dcdfdd6a62ac40&rank=3&isAddedCart=
+[2024-08-12T06:08:39.995+0000] {logging_mixin.py:188} WARNING -  56%|#####6    | 199/354 [09:54<10:18,  3.99s/it]
+[2024-08-12T06:08:43.186+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7956680597?itemId=21984378438&vendorItemId=89031970705&pickType=COU_PICK&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%A7%A4%EC%A7%81%EC%BB%B4%ED%8F%AC%ED%8A%B8+%ED%8C%AC%ED%8B%B0%ED%98%95+6%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+72%EB%A7%A4&itemsCount=36&searchId=e98ad1f795434ac6bad86c64f74c0355&rank=1&isAddedCart=
+[2024-08-12T06:08:45.278+0000] {logging_mixin.py:188} WARNING -  56%|#####6    | 200/354 [09:59<11:13,  4.38s/it]
+[2024-08-12T06:08:46.954+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13948726201&vendorItemId=81656521235&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%B3%B4%EC%86%A1%EB%B3%B4%EC%86%A1+%ED%8C%AC%ED%8B%B0%ED%98%95+6%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+160%EB%A7%A4&itemsCount=36&searchId=59a11a2007a3421fa3a81395dc434ef2&rank=11&isAddedCart=
+[2024-08-12T06:08:50.043+0000] {logging_mixin.py:188} WARNING -  57%|#####6    | 201/354 [10:04<11:27,  4.49s/it]
+[2024-08-12T06:08:51.875+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13421814903&vendorItemId=80676448301&src=1032035&spec=10305197&addtag=400&ctag=6359859813&lptag=I13421814903&itime=20240620010602&pageType=PRODUCT&pageValue=6359859813&wPcid=16980653682695622259975&wRef=www.enuri.com&wTime=20240620010602&redirect=landing&mcid=3947d890bec94ba686e8996e7de1bafa&isAddedCart=
+[2024-08-12T06:08:52.955+0000] {logging_mixin.py:188} WARNING -  57%|#####7    | 202/354 [10:07<10:10,  4.02s/it]
+[2024-08-12T06:08:54.532+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7927695825?itemId=21797786536&vendorItemId=88846395637&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%A7%A5%EC%8A%A4%EB%93%9C%EB%9D%BC%EC%9D%B4+%EB%B0%B4%EB%93%9C%ED%98%95+3%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+144%EB%A7%A4&itemsCount=36&searchId=0483bceb8d8e470b8847d40bf01c0658&rank=1&isAddedCart=
+[2024-08-12T06:08:57.626+0000] {logging_mixin.py:188} WARNING -  57%|#####7    | 203/354 [10:11<10:36,  4.21s/it]
+[2024-08-12T06:08:58.480+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7927695825?itemId=21797786536&vendorItemId=89883859128&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%A7%A5%EC%8A%A4%EB%93%9C%EB%9D%BC%EC%9D%B4+%EB%B0%B4%EB%93%9C%ED%98%95+3%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+72%EB%A7%A4&itemsCount=36&searchId=82b5064f98d94461bbac618fe76394d2&rank=1&isAddedCart=
+[2024-08-12T06:09:00.531+0000] {logging_mixin.py:188} WARNING -  58%|#####7    | 204/354 [10:14<09:33,  3.82s/it]
+[2024-08-12T06:09:01.180+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7098936585?itemId=17568421132&vendorItemId=84735186623&sourceType=srp_product_ads&clickEventId=4b4c5f60-2e5c-11ef-9790-0ac58f669a67&korePlacement=15&koreSubPlacement=1&q=%EC%BF%A0%EC%9E%89+%EB%B2%A0%EB%9F%AC%EC%97%85+%ED%8C%AC%ED%8B%B0%ED%98%95+%EC%A0%90%EB%B3%B4%ED%98%95(2XL)+80%EB%A7%A4&itemsCount=36&searchId=75e8d53a434f4bd0b31e7cce1579f7d2&rank=0&isAddedCart=
+[2024-08-12T06:09:02.263+0000] {logging_mixin.py:188} WARNING -  58%|#####7    | 205/354 [10:16<07:56,  3.19s/it]
+[2024-08-12T06:09:02.893+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7956680597?itemId=21700793937&vendorItemId=89031970724&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%EB%A7%A4%EC%A7%81%EC%BB%B4%ED%8F%AC%ED%8A%B8+%ED%8C%AC%ED%8B%B0%ED%98%95+4%EB%8B%A8%EA%B3%84+%EA%B3%B5%EC%9A%A9+100%EB%A7%A4&itemsCount=36&searchId=ed944b5fa7524bd68b2be1294f47d766&rank=9&isAddedCart=
+[2024-08-12T06:09:03.932+0000] {logging_mixin.py:188} WARNING -  58%|#####8    | 206/354 [10:18<06:45,  2.74s/it]
+[2024-08-12T06:09:04.602+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7009387263?itemId=17219052717&vendorItemId=84390893537&pickType=COU_PICK&q=%EB%AA%A8%EB%AA%A8%EB%9E%98%EB%B9%97+%EC%97%90%EC%BD%94%EC%BB%B4%ED%8F%AC%ED%8A%B8%ED%95%8F+%ED%8C%AC%ED%8B%B0%ED%98%95+%ED%8A%B9%EB%8C%80%ED%98%95(XL)+%EA%B3%B5%EC%9A%A9+88%EB%A7%A4&itemsCount=36&searchId=c32bd9f2bc8b4d5b9a29d59b6cf22caf&rank=1&isAddedCart=
+[2024-08-12T06:09:05.676+0000] {logging_mixin.py:188} WARNING -  58%|#####8    | 207/354 [10:19<05:58,  2.44s/it]
+[2024-08-12T06:09:06.175+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2175511212?itemId=84184151454&vendorItemId=85586779830&src=1032001&spec=10305197&addtag=400&ctag=2175511212&lptag=l1442144515818&itime=20240620053923&pageType=PRODUCT&pageValue=2175511212&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620053923&redirect=landing&mcid=de2d43bb30ed40fba9e5e0bf47cf732d&isAddedCart=
+[2024-08-12T06:09:08.215+0000] {logging_mixin.py:188} WARNING -  59%|#####8    | 208/354 [10:22<06:00,  2.47s/it]
+[2024-08-12T06:09:08.816+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6155658933?itemId=11913306036&vendorItemId=86602879095&src=1032035&spec=10305197&addtag=400&ctag=6155658933&lptag=I11913306036&itime=20240620060255&pageType=PRODUCT&pageValue=6155658933&wPcid=16980653682695622259975&wRef=www.enuri.com&wTime=20240620060255&redirect=landing&mcid=2190942552894424b6b4d10508eebf73&isAddedCart=
+[2024-08-12T06:09:11.844+0000] {logging_mixin.py:188} WARNING -  59%|#####9    | 209/354 [10:26<06:48,  2.82s/it]
+[2024-08-12T06:09:12.443+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/332153398?itemId=1061240013&vendorItemId=5539632893&src=1032001&spec=10305197&addtag=400&ctag=332153398&lptag=I1061240013&itime=20240620061311&pageType=PRODUCT&pageValue=332153398&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620061311&redirect=landing&mcid=8a4514131430428ab44ebb4c18434902&isAddedCart=
+[2024-08-12T06:09:14.527+0000] {logging_mixin.py:188} WARNING -  59%|#####9    | 210/354 [10:28<06:39,  2.78s/it]
+[2024-08-12T06:09:15.088+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5191737867?itemId=7210144849&vendorItemId=74501686523&q=%EC%9E%89%EA%B8%80%EB%A0%88%EC%8B%9C%EB%82%98+%ED%8A%B8%EC%9C%88+%EC%8A%A4%EC%BC%80%EC%B9%98&itemsCount=36&searchId=c42d6b7fff304f42afb35df0cc0fbea0&rank=1&isAddedCart=
+[2024-08-12T06:09:17.120+0000] {logging_mixin.py:188} WARNING -  60%|#####9    | 211/354 [10:31<06:29,  2.72s/it]
+[2024-08-12T06:09:17.665+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2378401745?itemId=4146130750&vendorItemId=72130035207&src=1032035&spec=10305197&addtag=400&ctag=2378401745&lptag=I4146130750&itime=20240620064142&pageType=PRODUCT&pageValue=2378401745&wPcid=16980653682695622259975&wRef=www.enuri.com&wTime=20240620064142&redirect=landing&mcid=c113d63c127b45d7b7872708bca124b7&isAddedCart=
+[2024-08-12T06:09:20.744+0000] {logging_mixin.py:188} WARNING -  60%|#####9    | 212/354 [10:34<07:04,  2.99s/it]
+[2024-08-12T06:09:21.353+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1336041471?itemId=2361868670&vendorItemId=84281718660&src=1032001&spec=10305199&addtag=400&ctag=1336041471&lptag=P1336041471&itime=20240620064401&pageType=PRODUCT&pageValue=1336041471&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620064401&redirect=landing&mcid=59f325dca8a548d09dbd162f83bf2782&isAddedCart=
+[2024-08-12T06:09:22.427+0000] {logging_mixin.py:188} WARNING -  60%|######    | 213/354 [10:36<06:06,  2.60s/it]
+[2024-08-12T06:09:23.035+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1332851402?itemId=2353188607&vendorItemId=70349673900&src=1032001&spec=10305197&addtag=400&ctag=1332851402&lptag=I2353188607&itime=20240620065014&pageType=PRODUCT&pageValue=1332851402&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620065014&redirect=landing&mcid=5733c927748f43ccb3694172370cfa6d&isAddedCart=
+[2024-08-12T06:09:25.068+0000] {logging_mixin.py:188} WARNING -  60%|######    | 214/354 [10:39<06:05,  2.61s/it]
+[2024-08-12T06:09:25.552+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6570797829?itemId=14748548256&vendorItemId=81988939913&src=1032001&spec=10305197&addtag=400&ctag=6570797829&lptag=I14748548256&itime=20240620070106&pageType=PRODUCT&pageValue=6570797829&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620070106&redirect=landing&mcid=dc3c53ccb16b4ac3ac07f6a96d17aecf&isAddedCart=
+[2024-08-12T06:09:26.621+0000] {logging_mixin.py:188} WARNING -  61%|######    | 215/354 [10:40<05:18,  2.29s/it]
+[2024-08-12T06:09:27.147+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2267434361?itemId=3887204203&vendorItemId=71871836183&src=1032001&spec=10305199&addtag=400&ctag=2267434361&lptag=I3887204203&itime=20240620070845&pageType=PRODUCT&pageValue=2267434361&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620070845&redirect=landing&mcid=f7c3f2d0e5dd46f9b50bd3a4edfabfce&isAddedCart=
+[2024-08-12T06:09:30.219+0000] {logging_mixin.py:188} WARNING -  61%|######1   | 216/354 [10:44<06:10,  2.69s/it]
+[2024-08-12T06:09:30.783+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2091991762?itemId=3553613019&vendorItemId=71539519697&q=%EB%B2%A0%EC%9D%B4%EB%B8%94%ED%93%A8%EC%96%B4%EB%A6%AC+%EC%9C%A0%EC%95%84+%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC+T4&itemsCount=36&searchId=65373102dea54ee48311a2ebabd20986&rank=2&isAddedCart=
+[2024-08-12T06:09:32.817+0000] {logging_mixin.py:188} WARNING -  61%|######1   | 217/354 [10:47<06:04,  2.66s/it]
+[2024-08-12T06:09:33.397+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7442949509?itemId=19358262506&vendorItemId=86471309127&src=1032001&spec=10305197&addtag=400&ctag=7442949509&lptag=I19358262506&itime=20240620073447&pageType=PRODUCT&pageValue=7442949509&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620073447&redirect=landing&mcid=377d2ea919b74a31b96502c066752692&isAddedCart=
+[2024-08-12T06:09:36.474+0000] {logging_mixin.py:188} WARNING -  62%|######1   | 218/354 [10:50<06:42,  2.96s/it]
+[2024-08-12T06:09:36.978+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7518818574?itemId=19715991410
+[2024-08-12T06:09:38.223+0000] {logging_mixin.py:188} WARNING -  62%|######1   | 219/354 [10:52<05:50,  2.60s/it]
+[2024-08-12T06:09:38.841+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2275821031?itemId=89135040653&vendorItemId=85730548571&src=1032001&spec=10305197&addtag=400&ctag=2275821031&lptag=l0136083552490&itime=20240620074906&pageType=PRODUCT&pageValue=2275821031&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620074906&redirect=landing&mcid=3470b85000664a26a7f719f5cb5edc06&isAddedCart=
+[2024-08-12T06:09:39.916+0000] {logging_mixin.py:188} WARNING -  62%|######2   | 220/354 [10:54<05:11,  2.32s/it]
+[2024-08-12T06:09:40.439+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/141122705?itemId=410972345&vendorItemId=4007864453&q=%EB%A6%AC%EC%95%88+%ED%8A%B8%EC%9C%88+%EC%8C%8D%EB%91%A5%EC%9D%B4+%EC%A0%88%EC%B6%A9%ED%98%95+%EC%9C%A0%EB%AA%A8%EC%B0%A8&itemsCount=36&searchId=f15ceb637963442489988f440abf33e4&rank=3&isAddedCart=
+[2024-08-12T06:09:43.475+0000] {logging_mixin.py:188} WARNING -  62%|######2   | 221/354 [10:57<05:58,  2.70s/it]
+[2024-08-12T06:09:44.074+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7735442838?itemId=20797475589&vendorItemId=87866760421&src=1032001&spec=10305197&addtag=400&ctag=7735442838&lptag=I20797475589&itime=20240620081459&pageType=PRODUCT&pageValue=7735442838&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620081459&redirect=landing&mcid=e88ad6afccaf4d85a7ec52b01cdd7a1a&isAddedCart=
+[2024-08-12T06:09:45.112+0000] {logging_mixin.py:188} WARNING -  63%|######2   | 222/354 [10:59<05:13,  2.38s/it]
+[2024-08-12T06:09:45.629+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7353196994?itemId=18927006494&vendorItemId=86053923178&src=1032001&spec=10305199&addtag=400&ctag=7353196994&lptag=P7353196994&itime=20240620081755&pageType=PRODUCT&pageValue=7353196994&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620081755&redirect=landing&mcid=79f2c9aa939e4bba92887953adc9d9dd&isAddedCart=
+[2024-08-12T06:09:47.698+0000] {logging_mixin.py:188} WARNING -  63%|######2   | 223/354 [11:01<05:19,  2.44s/it]
+[2024-08-12T06:09:48.270+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6607261426?itemId=14966645223&vendorItemId=82189862756&src=1032001&spec=10305197&addtag=400&ctag=6607261426&lptag=I14966645223&itime=20240620082733&pageType=PRODUCT&pageValue=6607261426&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620082733&redirect=landing&mcid=4ff86971d9954190b875b09e163d0c0d&isAddedCart=
+[2024-08-12T06:09:51.351+0000] {logging_mixin.py:188} WARNING -  63%|######3   | 224/354 [11:05<06:04,  2.80s/it]
+[2024-08-12T06:09:51.747+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7991292480?itemId=22213257164&vendorItemId=89259270763&src=1032001&spec=10305199&addtag=400&ctag=7991292480&lptag=I22213257164&itime=20240620085117&pageType=PRODUCT&pageValue=7991292480&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620085117&redirect=landing&mcid=958087a041764957b9d604d06d472239&isAddedCart=
+[2024-08-12T06:09:52.762+0000] {logging_mixin.py:188} WARNING -  64%|######3   | 225/354 [11:06<05:07,  2.39s/it]
+[2024-08-12T06:09:53.316+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6850211250?itemId=16316596080&vendorItemId=83508751133&src=1032035&spec=10305197&addtag=400&ctag=6850211250&lptag=I16316596080&itime=20240620090515&pageType=PRODUCT&pageValue=6850211250&wPcid=16980653682695622259975&wRef=www.enuri.com&wTime=20240620090515&redirect=landing&mcid=a12c818ac6d7463cae02e02087e5e5c9&isAddedCart=
+[2024-08-12T06:09:54.359+0000] {logging_mixin.py:188} WARNING -  64%|######3   | 226/354 [11:08<04:35,  2.15s/it]
+[2024-08-12T06:09:55.397+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/3649225604?itemId=70173034935&vendorItemId=3000125196&src=1032001&spec=10305197&addtag=400&ctag=3649225604&lptag=l0310975234371&itime=20240620090721&pageType=PRODUCT&pageValue=3649225604&wPcid=16980653682695622259975&wRef=cr.shopping.naver.com&wTime=20240620090721&redirect=landing&mcid=96494f45d38c41fabe63e06576f48be0&isAddedCart=
+[2024-08-12T06:09:57.486+0000] {logging_mixin.py:188} WARNING -  64%|######4   | 227/354 [11:11<05:10,  2.44s/it]
+[2024-08-12T06:09:58.405+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7857883733?itemId=21436012405&vendorItemId=3091339209&sourceType=srp_product_ads&clickEventId=da8b4910-2e99-11ef-a1a7-5f2d4c57f86c&korePlacement=15&koreSubPlacement=1&q=%EB%B2%A0%EB%B2%A0%EC%95%99+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90+%ED%94%8C%EB%9F%AC%EC%8A%A4+%EC%95%84%EA%B8%B0%EB%AC%BC%ED%8B%B0%EC%8A%88+%EC%BA%A1%ED%98%95+55gsm%2C+100%EB%A7%A4%2C+10%EA%B0%9C&itemsCount=36&searchId=37ef1f68e67646009641ac4267e3a1dd&rank=0&isAddedCart=
+[2024-08-12T06:09:59.454+0000] {logging_mixin.py:188} WARNING -  64%|######4   | 228/354 [11:13<04:49,  2.30s/it]
+[2024-08-12T06:10:00.263+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/15040201?itemId=61887502&vendorItemId=3096887841&pickType=COU_PICK&q=%EB%B2%A0%EB%B2%A0%EC%88%B2+%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98+%EB%B8%94%EB%A3%A8+%EC%97%A0%EB%B3%B4%EC%8B%B1+%EB%AC%BC%ED%8B%B0%EC%8A%88+%EB%A6%AC%ED%95%84%ED%98%95+75%ED%8F%89%EB%9F%89%2C+70%EB%A7%A4%2C+10%ED%8C%A9&itemsCount=35&searchId=d90a81ee84f74de0b16dc8cda1b531a9&rank=3&isAddedCart=
+[2024-08-12T06:10:02.315+0000] {logging_mixin.py:188} WARNING -  65%|######4   | 229/354 [11:16<05:08,  2.47s/it]
+[2024-08-12T06:10:02.866+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7816581361?itemId=21217237799&vendorItemId=88278242752&q=%EC%94%A8%EB%B0%80%EB%A0%89%EC%8A%A4+%EB%9E%98%ED%8F%B4%EB%93%9C+%ED%84%B0%EC%B9%98+%EC%98%A4%ED%94%88&itemsCount=36&searchId=5b2c00250183422787a378a5270bcb57&rank=7&isAddedCart=
+[2024-08-12T06:10:05.943+0000] {logging_mixin.py:188} WARNING -  65%|######4   | 230/354 [11:20<05:49,  2.82s/it]
+[2024-08-12T06:10:06.597+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4389414326?itemId=6501884111&vendorItemId=72320063416
+[2024-08-12T06:10:08.687+0000] {logging_mixin.py:188} WARNING -  65%|######5   | 231/354 [11:22<05:43,  2.79s/it]
+[2024-08-12T06:10:09.637+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6113139428?itemId=21036360883&vendorItemId=84993765010&sourceType=srp_product_ads&clickEventId=cbcfa3f0-3d9c-11ef-945a-b866ef5cbef0&korePlacement=15&koreSubPlacement=1&q=%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EB%AA%85%EC%9E%91+2FL+%EB%B6%84%EC%9C%A0+1%EB%8B%A8%EA%B3%84%2C+800g%2C+2%EA%B0%9C&itemsCount=36&searchId=d9233213c5f74fac9fdd2fcdec4acaac&rank=0&isAddedCart=
+[2024-08-12T06:10:12.727+0000] {logging_mixin.py:188} WARNING -  66%|######5   | 232/354 [11:26<06:26,  3.17s/it]
+[2024-08-12T06:10:13.315+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7047433864?itemId=19588540104&vendorItemId=86252314488
+[2024-08-12T06:10:14.347+0000] {logging_mixin.py:188} WARNING -  66%|######5   | 233/354 [11:28<05:27,  2.70s/it]
+[2024-08-12T06:10:15.073+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7750218300?itemId=9869583500&vendorItemId=84612405333&q=%EC%9E%84%ED%8E%98%EB%A6%AC%EC%96%BC+XO%09%5B%271%EB%8B%A8%EA%B3%84%27%2C+%27800g%27%2C+%271%EA%B0%9C%27%5D&itemsCount=36&searchId=36c1870bd8dd425cb4eae6e9efae517a&rank=19&isAddedCart=
+[2024-08-12T06:10:18.112+0000] {logging_mixin.py:188} WARNING -  66%|######6   | 234/354 [11:32<06:02,  3.02s/it]
+[2024-08-12T06:10:18.869+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6493104250?itemId=14262665156&vendorItemId=85072690844&sourceType=srp_top_banner_ads&clickEventId=4f7f5210-3daf-11ef-acd5-fe1e730814a1&korePlacement=19&templateId=1163&isAddedCart=
+[2024-08-12T06:10:21.907+0000] {logging_mixin.py:188} WARNING -  66%|######6   | 235/354 [11:36<06:27,  3.25s/it]
+[2024-08-12T06:10:22.548+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7055016168?itemId=19011490056&vendorItemId=87911611888&q=%EB%82%A8%EC%96%91+%EC%95%84%EC%9D%B4%EC%97%A0%EB%A7%88%EB%8D%94+2%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=da9d338e992745eab2ae703977eae7b9&rank=13&isAddedCart=
+[2024-08-12T06:10:23.629+0000] {logging_mixin.py:188} WARNING -  67%|######6   | 236/354 [11:37<05:29,  2.79s/it]
+[2024-08-12T06:10:24.296+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1098886516?itemId=23141069332&vendorItemId=89719977467
+[2024-08-12T06:10:27.384+0000] {logging_mixin.py:188} WARNING -  67%|######6   | 237/354 [11:41<06:00,  3.08s/it]
+[2024-08-12T06:10:28.108+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/121869454?itemId=1069319771&vendorItemId=85101042253&pickType=COU_PICK&q=%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%ED%94%8C%EB%9E%98%ED%8B%B0%EB%84%98+%EC%82%B0%EC%96%91%EB%B6%84%EC%9C%A0+1%EB%8B%A8%EA%B3%84%2C+750g%2C+4%EA%B0%9C&itemsCount=36&searchId=ac2f84c73295465b9e13ae52a6a40d27&rank=2&isAddedCart=
+[2024-08-12T06:10:30.199+0000] {logging_mixin.py:188} WARNING -  67%|######7   | 238/354 [11:44<05:48,  3.00s/it]
+[2024-08-12T06:10:30.913+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4550724570?itemId=17909997655&vendorItemId=72821632669&q=%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%9C%A0%EA%B8%B0%EB%86%8D+%EA%B6%81+1%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=10c3f5afee5e4a86b675e18fa80d8c3c&rank=7&isAddedCart=
+[2024-08-12T06:10:32.997+0000] {logging_mixin.py:188} WARNING -  68%|######7   | 239/354 [11:47<05:38,  2.94s/it]
+[2024-08-12T06:10:33.722+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7047433860?itemId=18039522534&vendorItemId=84612405296&q=%EC%9E%84%ED%8E%98%EB%A6%AC%EC%96%BC+XO+2%EB%8B%A8%EA%B3%84+800&itemsCount=35&searchId=fe14c111502b4d64b38cc2be4b584b7f&rank=6&isAddedCart=
+[2024-08-12T06:10:34.819+0000] {logging_mixin.py:188} WARNING -  68%|######7   | 240/354 [11:49<04:57,  2.61s/it]
+[2024-08-12T06:10:35.486+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/121869454?itemId=362205662&vendorItemId=3880858383&q=%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EC%82%B0%EC%96%91%EB%B6%84%EC%9C%A0+1%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=48223a186e8242779b6f1c37473dd917&rank=6&isAddedCart=
+[2024-08-12T06:10:38.702+0000] {logging_mixin.py:188} WARNING -  68%|######8   | 241/354 [11:52<05:37,  2.99s/it]
+[2024-08-12T06:10:39.321+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6973174583?itemId=17013949972&vendorItemId=84189686792&q=%EC%9C%84%EB%93%9C%EB%A7%98+%EC%A0%9C%EC%99%95+2%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=dd29837edacf4e80830ed1c60bb9e78a&rank=1&isAddedCart=
+[2024-08-12T06:10:42.399+0000] {logging_mixin.py:188} WARNING -  68%|######8   | 242/354 [11:56<05:58,  3.20s/it]
+[2024-08-12T06:10:43.259+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4550724570?itemId=17909997655&vendorItemId=85101032221&q=%EC%95%B1%EC%86%94%EB%A3%A8%ED%8A%B8+%EA%B6%81+1%EB%8B%A8%EA%B3%84+2%EA%B0%9C&itemsCount=36&searchId=df9f94f026454fe0a6ecb3ebdfb9c77f&rank=2&isAddedCart=
+[2024-08-12T06:10:46.312+0000] {logging_mixin.py:188} WARNING -  69%|######8   | 243/354 [12:00<06:19,  3.41s/it]
+[2024-08-12T06:10:47.208+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6493104250?itemId=15685015784&vendorItemId=3028155119&pickType=COU_PICK&q=%ED%9B%84%EB%94%94%EC%8A%A4+%EC%82%B0%EC%96%91%EB%B6%84%EC%9C%A0+2%EB%8B%A8%EA%B3%84+1%EA%B0%9C&itemsCount=36&searchId=40a53f6637ca47cd84663ad1b3b30c8c&rank=1&isAddedCart=
+[2024-08-12T06:10:50.249+0000] {logging_mixin.py:188} WARNING -  69%|######8   | 244/354 [12:04<06:32,  3.57s/it]
+[2024-08-12T06:10:50.903+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7733156491?itemId=17943179315&vendorItemId=85101046295&q=%EC%9C%84%EB%93%9C%EB%A7%98+%EC%A0%9C%EC%99%95+1%EB%8B%A8%EA%B3%84+2%EA%B0%9C&itemsCount=36&searchId=c569acc418c742bf91aeabc682ae37fa&rank=11&isAddedCart=
+[2024-08-12T06:10:53.994+0000] {logging_mixin.py:188} WARNING -  69%|######9   | 245/354 [12:08<06:34,  3.62s/it]
+[2024-08-12T06:10:54.777+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6493104250?itemId=15977201424&vendorItemId=85072691018&pickType=COU_PICK&q=%EC%9D%BC%EB%8F%99+%EC%82%B0%EC%96%91%EB%B6%84%EC%9C%A0+2%EB%8B%A8%EA%B3%84+4%EA%B0%9C&itemsCount=36&searchId=c488334924e542eaa4233a7bc138f71c&rank=1&isAddedCart=
+[2024-08-12T06:10:57.870+0000] {logging_mixin.py:188} WARNING -  69%|######9   | 246/354 [12:12<06:39,  3.70s/it]
+[2024-08-12T06:10:58.598+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4399509562?itemId=6151105366&vendorItemId=84191483099&q=%EC%9C%A0%EA%B8%B0%EB%86%8D+%EA%B6%81+2%EB%8B%A8%EA%B3%84+2%EA%B0%9C&itemsCount=36&searchId=78b255540436410a93c7fd2ed2aabe70&rank=7&isAddedCart=
+[2024-08-12T06:11:01.651+0000] {logging_mixin.py:188} WARNING -  70%|######9   | 247/354 [12:15<06:38,  3.72s/it]
+[2024-08-12T06:11:02.225+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7727887907?itemId=20757942428&vendorItemId=79688132822&q=%ED%94%84%EB%A1%9C%ED%91%B8%ED%8A%B8%EB%9D%BC+2%EB%8B%A8%EA%B3%84+6%EA%B0%9C&itemsCount=36&searchId=9d33fe2b00a647919ef5d247bedc7512&rank=1&isAddedCart=
+[2024-08-12T06:11:05.254+0000] {logging_mixin.py:188} WARNING -  70%|#######   | 248/354 [12:19<06:30,  3.69s/it]
+[2024-08-12T06:11:05.880+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6101760262?itemId=18168690460&vendorItemId=85855886138&q=%EB%89%B4%EC%98%A4%EB%A6%AC%EC%A7%84+a2+2%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=2a57c6eb13a44316a3247a4fc682a8d7&rank=1&isAddedCart=
+[2024-08-12T06:11:07.921+0000] {logging_mixin.py:188} WARNING -  70%|#######   | 249/354 [12:22<05:55,  3.38s/it]
+[2024-08-12T06:11:08.848+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13421814226&vendorItemId=80676447917&pickType=COU_PICK&q=%EB%B3%B4%EC%86%A1%EB%B3%B4%EC%86%A1+6%EB%8B%A8%EA%B3%84+80%EB%A7%A4&itemsCount=36&searchId=e48c84591fd3418f8dcd4959099b8b63&rank=1&isAddedCart=
+[2024-08-12T06:11:10.899+0000] {logging_mixin.py:188} WARNING -  71%|#######   | 250/354 [12:25<05:39,  3.26s/it]
+[2024-08-12T06:11:11.543+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7958264259?itemId=22465493810&vendorItemId=89045722047&pickType=COU_PICK&q=%EB%A7%A4%EC%A7%81%EC%BB%B4%ED%8F%AC%ED%8A%B8+%EC%8D%B8%EB%A8%B8+6%EB%8B%A8%EA%B3%84+74%EB%A7%A4&itemsCount=36&searchId=3863fcde8769489ebb643b0cdfcbbbe1&rank=1&isAddedCart=
+[2024-08-12T06:11:14.627+0000] {logging_mixin.py:188} WARNING -  71%|#######   | 251/354 [12:28<05:50,  3.40s/it]
+[2024-08-12T06:11:15.284+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7956680597?itemId=21984378448&vendorItemId=89031970736&pickType=COU_PICK&q=%EB%A7%A4%EC%A7%81%EC%BB%B4%ED%8F%AC%ED%8A%B8+5%EB%8B%A8%EA%B3%84&itemsCount=36&searchId=815ef74cea4a48188b639489e8fe98e6&rank=1&isAddedCart=
+[2024-08-12T06:11:17.345+0000] {logging_mixin.py:188} WARNING -  71%|#######1  | 252/354 [12:31<05:25,  3.20s/it]
+[2024-08-12T06:11:18.157+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7927695825?itemId=21797786525&vendorItemId=88846395621&pickType=COU_PICK&q=%EB%A7%A5%EC%8A%A4%EB%93%9C%EB%9D%BC%EC%9D%B4+2%EB%8B%A8%EA%B3%84+174%EB%A7%A4&itemsCount=36&searchId=feb4047201a44c20b9c44bba1da280e0&rank=1&isAddedCart=
+[2024-08-12T06:11:21.243+0000] {logging_mixin.py:188} WARNING -  71%|#######1  | 253/354 [12:35<05:44,  3.41s/it]
+[2024-08-12T06:11:22.212+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7955976269?itemId=22478921330&vendorItemId=89521457006
+[2024-08-12T06:11:23.280+0000] {logging_mixin.py:188} WARNING -  72%|#######1  | 254/354 [12:37<04:59,  3.00s/it]
+[2024-08-12T06:11:24.167+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13677165766&vendorItemId=81656521181&pickType=COU_PICK&q=%EB%B3%B4%EC%86%A1%EB%B3%B4%EC%86%A1+7%EB%8B%A8%EA%B3%84+136%EB%A7%A4&itemsCount=36&searchId=cdb64997cd214dc0935396b42686c640&rank=1&isAddedCart=
+[2024-08-12T06:11:27.255+0000] {logging_mixin.py:188} WARNING -  72%|#######2  | 255/354 [12:41<05:25,  3.29s/it]
+[2024-08-12T06:11:28.199+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978311285?itemId=22125443113&vendorItemId=89172286804&src=1042503&spec=10304982&addtag=400&ctag=7978311285&lptag=10304982I22125443113&itime=20240710083212&pageType=PRODUCT&pageValue=7978311285&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710083212&redirect=landing&gclid=&mcid=463ce878155340c099da5ad59a960beb&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:29.253+0000] {logging_mixin.py:188} WARNING -  72%|#######2  | 256/354 [12:43<04:44,  2.90s/it]
+[2024-08-12T06:11:29.833+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7098936585?itemId=17714914713&vendorItemId=84879774696&q=%EB%B2%A0%EB%9F%AC%EC%97%85+%ED%8A%B9%EB%8C%80%ED%98%95+88%EB%A7%A4&itemsCount=36&searchId=8bc404ea69a54cc7b7ff2e85ffa0c78b&rank=1&isAddedCart=
+[2024-08-12T06:11:32.871+0000] {logging_mixin.py:188} WARNING -  73%|#######2  | 257/354 [12:47<05:02,  3.12s/it]
+[2024-08-12T06:11:33.647+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7857901568?itemId=21436080703&vendorItemId=84095676789&pickType=COU_PICK&q=120+%EC%97%A0%EB%B3%B4%EC%8B%B1+%EC%95%84%EA%B8%B0%EB%AC%BC%ED%8B%B0%EC%8A%88&itemsCount=36&searchId=b99f3f5fece0454b9de702bdd355fa32&rank=1&isAddedCart=
+[2024-08-12T06:11:34.686+0000] {logging_mixin.py:188} WARNING -  73%|#######2  | 258/354 [12:48<04:21,  2.73s/it]
+[2024-08-12T06:11:35.425+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/252301180?itemId=795038805&vendorItemId=5018255169&src=1042503&spec=10304982&addtag=400&ctag=252301180&lptag=10304982I795038805&itime=20240710084418&pageType=PRODUCT&pageValue=252301180&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710084418&redirect=landing&gclid=&mcid=33ab4e4401454518975463b03aa0c36c&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:37.465+0000] {logging_mixin.py:188} WARNING -  73%|#######3  | 259/354 [12:51<04:20,  2.74s/it]
+[2024-08-12T06:11:38.526+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/15040202?itemId=11348654541&vendorItemId=3096887843&q=%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98+%EB%B8%94%EB%A3%A8+%EC%9C%A0%EC%95%84%EB%AC%BC%ED%8B%B0%EC%8A%88&itemsCount=36&searchId=1188ae2c6fc84942b908dc2eac1df0fc&rank=7&isAddedCart=
+[2024-08-12T06:11:40.567+0000] {logging_mixin.py:188} WARNING -  73%|#######3  | 260/354 [12:54<04:27,  2.85s/it]
+[2024-08-12T06:11:41.417+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5523368974?itemId=18680735130&vendorItemId=76198740265&src=1042503&spec=10304982&addtag=400&ctag=5523368974&lptag=10304982I18680735130&itime=20240710084723&pageType=PRODUCT&pageValue=5523368974&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710084723&redirect=landing&gclid=&mcid=936d68eb163442bd9ca8cf0447bf922c&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:42.505+0000] {logging_mixin.py:188} WARNING -  74%|#######3  | 261/354 [12:56<03:59,  2.58s/it]
+[2024-08-12T06:11:43.195+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6787585858?itemId=15982098702&vendorItemId=85862121117&src=1042503&spec=10304991&addtag=400&ctag=6787585858&lptag=10304991I15982098702&itime=20240710084940&pageType=PRODUCT&pageValue=6787585858&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710084940&redirect=landing&gclid=&mcid=5cc36a6f0f504f36afe8d1d3378d2476&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:44.438+0000] {logging_mixin.py:188} WARNING -  74%|#######4  | 262/354 [12:58<03:39,  2.38s/it]
+[2024-08-12T06:11:45.431+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6615096004?itemId=15016467162&vendorItemId=82239205259&q=%ED%95%98%EA%B8%B0%EC%8A%A4+%ED%93%A8%EC%96%B4%EA%B7%B8%EB%A6%B0+%EB%AC%BC%ED%8B%B0%EC%8A%88&itemsCount=49&searchId=08d2ca9ce32448949960dca8304eaafc&rank=0&isAddedCart=
+[2024-08-12T06:11:48.519+0000] {logging_mixin.py:188} WARNING -  74%|#######4  | 263/354 [13:02<04:23,  2.89s/it]
+[2024-08-12T06:11:49.503+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7952997928?itemId=14196424350&vendorItemId=3921747491&q=%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%98%90%EB%A1%9C%EC%9A%B0+%EB%AC%BC%ED%8B%B0%EC%8A%88+20%EB%A7%A4&itemsCount=49&searchId=e2c9c37df12f4cec9cbcda009e4dca3d&rank=3&isAddedCart=
+[2024-08-12T06:11:51.563+0000] {logging_mixin.py:188} WARNING -  75%|#######4  | 264/354 [13:05<04:24,  2.94s/it]
+[2024-08-12T06:11:52.354+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7337923814?itemId=18853150611&vendorItemId=82042656585&sourceType=srp_product_ads&clickEventId=a03035e0-3e4e-11ef-8a3a-4b7beebf02d3&korePlacement=15&koreSubPlacement=1&q=%EB%8F%84%EB%A6%AC%EB%8F%84%EB%A6%AC+%ED%93%A8%EC%96%B4&itemsCount=49&searchId=4b4bff6672004383afac557133dc01b2&rank=0&isAddedCart=
+[2024-08-12T06:11:54.393+0000] {logging_mixin.py:188} WARNING -  75%|#######4  | 265/354 [13:08<04:18,  2.91s/it]
+[2024-08-12T06:11:55.237+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/207610797?itemId=608607889&vendorItemId=4403776133&src=1042503&spec=10304982&addtag=400&ctag=207610797&lptag=10304982I608607889&itime=20240710085633&pageType=PRODUCT&pageValue=207610797&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710085633&redirect=landing&gclid=&mcid=7d964abac8b44fe7b391c2c06dd3531a&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:56.272+0000] {logging_mixin.py:188} WARNING -  75%|#######5  | 266/354 [13:10<03:48,  2.60s/it]
+[2024-08-12T06:11:56.936+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6602580021?itemId=14940623618&vendorItemId=82165440919&src=1042503&spec=10304982&addtag=400&ctag=6602580021&lptag=10304982I14940623618&itime=20240710085724&pageType=PRODUCT&pageValue=6602580021&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710085724&redirect=landing&gclid=&mcid=8e2411b2d1c3427bb775961e61564f05&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:11:57.977+0000] {logging_mixin.py:188} WARNING -  75%|#######5  | 267/354 [13:12<03:22,  2.33s/it]
+[2024-08-12T06:11:58.654+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/214020726?itemId=650922845&vendorItemId=4686958016&q=%EC%95%84%EB%9D%A0%EC%95%99+%ED%9C%B4%EB%8C%80%EC%9A%A9+%EB%AC%BC%ED%8B%B0%EC%8A%88&itemsCount=36&searchId=4a43d881b9b84f289b9e1e48c71ed756&rank=1&isAddedCart=
+[2024-08-12T06:11:59.741+0000] {logging_mixin.py:188} WARNING -  76%|#######5  | 268/354 [13:13<03:05,  2.16s/it]
+[2024-08-12T06:12:00.646+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7185941718?itemId=19445860387&vendorItemId=85283440778&src=1042503&spec=10304982&addtag=400&ctag=7185941718&lptag=10304982I19445860387&itime=20240710091007&pageType=PRODUCT&pageValue=7185941718&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710091007&redirect=landing&gclid=&mcid=20785171984645b1a9cc50b289b77cdd&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:01.727+0000] {logging_mixin.py:188} WARNING -  76%|#######5  | 269/354 [13:15<02:59,  2.11s/it]
+[2024-08-12T06:12:02.459+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7837075849?itemId=21325204585&vendorItemId=88384214163&src=1042503&spec=10304982&addtag=400&ctag=7837075849&lptag=10304982I21325204585&itime=20240710091502&pageType=PRODUCT&pageValue=7837075849&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710091502&redirect=landing&gclid=&mcid=3899bbc0d7f7452683c57909b0639fed&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:03.546+0000] {logging_mixin.py:188} WARNING -  76%|#######6  | 270/354 [13:17<02:49,  2.02s/it]
+[2024-08-12T06:12:04.291+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7161277992?itemId=16640053406&vendorItemId=83824256123&src=1042503&spec=10304982&addtag=400&ctag=7161277992&lptag=10304982I16640053406&itime=20240710091704&pageType=PRODUCT&pageValue=7161277992&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710091704&redirect=landing&gclid=&mcid=5afec081fdf44c93b5aa8f62ec19a6ca&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:05.376+0000] {logging_mixin.py:188} WARNING -  77%|#######6  | 271/354 [13:19<02:42,  1.96s/it]
+[2024-08-12T06:12:06.013+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6787585858?itemId=15956746672&vendorItemId=85706568963&src=1042503&spec=10304991&addtag=400&ctag=6787585858&lptag=10304991I15956746672&itime=20240710091749&pageType=PRODUCT&pageValue=6787585858&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710091749&redirect=landing&gclid=&mcid=2a80c90d94ed4b18a6c63ec93e6afa65&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:07.045+0000] {logging_mixin.py:188} WARNING -  77%|#######6  | 272/354 [13:21<02:33,  1.88s/it]
+[2024-08-12T06:12:07.923+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6694545132?itemId=15483166775&vendorItemId=82702585237&src=1042503&spec=10304982&addtag=400&ctag=6694545132&lptag=10304982I15483166775&itime=20240710091852&pageType=PRODUCT&pageValue=6694545132&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710091852&redirect=landing&gclid=&mcid=6b725eebc4094ca09c1af8228ce97961&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:09.011+0000] {logging_mixin.py:188} WARNING -  77%|#######7  | 273/354 [13:23<02:34,  1.90s/it]
+[2024-08-12T06:12:09.704+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7870327392?itemId=21498343525&vendorItemId=70373602529&isAddedCart=
+[2024-08-12T06:12:11.751+0000] {logging_mixin.py:188} WARNING -  77%|#######7  | 274/354 [13:25<02:52,  2.15s/it]
+[2024-08-12T06:12:12.340+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8058975341?itemId=22631872329&vendorItemId=3141031779&src=1042503&spec=10304982&addtag=400&ctag=8058975341&lptag=10304982I22631872329&itime=20240710092429&pageType=PRODUCT&pageValue=8058975341&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710092429&redirect=landing&gclid=&mcid=8145b813c55343d3b588ee63d1c259ea&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:15.415+0000] {logging_mixin.py:188} WARNING -  78%|#######7  | 275/354 [13:29<03:25,  2.61s/it]
+[2024-08-12T06:12:16.074+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7837620493?itemId=21327836709&vendorItemId=88386477306&src=1042503&spec=10304982&addtag=400&ctag=7837620493&lptag=10304982I21327836709&itime=20240710092711&pageType=PRODUCT&pageValue=7837620493&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710092711&redirect=landing&gclid=&mcid=ad0b79510e0b4ccd875d5761ecaddb5b&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:19.111+0000] {logging_mixin.py:188} WARNING -  78%|#######7  | 276/354 [13:33<03:48,  2.93s/it]
+[2024-08-12T06:12:19.748+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7465528788?itemId=19468750991&vendorItemId=86579054148&src=1042503&spec=10304982&addtag=400&ctag=7465528788&lptag=10304982I19468750991&itime=20240710092829&pageType=PRODUCT&pageValue=7465528788&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710092829&redirect=landing&gclid=&mcid=96a9227df4af4eadbf6ebff18ebe7fba&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:22.827+0000] {logging_mixin.py:188} WARNING -  78%|#######8  | 277/354 [13:37<04:03,  3.17s/it]
+[2024-08-12T06:12:23.568+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6747895519?itemId=16076351906&vendorItemId=70767984628&src=1042503&spec=10304982&addtag=400&ctag=6747895519&lptag=10304982I16076351906&itime=20240710092819&pageType=PRODUCT&pageValue=6747895519&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710092819&redirect=landing&gclid=&mcid=88dd786f634943a38d6555384c8c3e40&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:24.606+0000] {logging_mixin.py:188} WARNING -  79%|#######8  | 278/354 [13:38<03:29,  2.75s/it]
+[2024-08-12T06:12:25.248+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7842772913?itemId=21354535578&vendorItemId=88412137669&src=1042503&spec=10304982&addtag=400&ctag=7842772913&lptag=10304982I21354535578&itime=20240710092925&pageType=PRODUCT&pageValue=7842772913&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710092925&redirect=landing&gclid=&mcid=7c71d97df64840fbb2602a4d75ce0fbc&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:27.327+0000] {logging_mixin.py:188} WARNING -  79%|#######8  | 279/354 [13:41<03:25,  2.74s/it]
+[2024-08-12T06:12:27.982+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7445536857?itemId=537550772&vendorItemId=4403776113&src=1042503&spec=10304982&addtag=400&ctag=7445536857&lptag=10304982I537550772&itime=20240710093023&pageType=PRODUCT&pageValue=7445536857&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710093023&redirect=landing&gclid=&mcid=ad6f78ff9b57471487d57c52b9a86ce3&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:31.062+0000] {logging_mixin.py:188} WARNING -  79%|#######9  | 280/354 [13:45<03:44,  3.04s/it]
+[2024-08-12T06:12:31.695+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6938951492?itemId=16819783190&vendorItemId=83999915822&src=1042503&spec=10304982&addtag=400&ctag=6938951492&lptag=10304982I16819783190&itime=20240710093103&pageType=PRODUCT&pageValue=6938951492&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710093103&redirect=landing&gclid=&mcid=dac4b90d22a343fb822402b1f5cac216&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:33.787+0000] {logging_mixin.py:188} WARNING -  79%|#######9  | 281/354 [13:48<03:35,  2.95s/it]
+[2024-08-12T06:12:34.584+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5511155833?itemId=8591562881&vendorItemId=75878825412&q=%EC%8B%9C%EA%B7%B8%EB%8B%88%EC%B2%98+%EB%A0%88%EB%93%9C+70%EB%A7%A4&itemsCount=49&searchId=9a1f2442b09f4dc39a810949bbcabe7b&rank=9&isAddedCart=
+[2024-08-12T06:12:35.672+0000] {logging_mixin.py:188} WARNING -  80%|#######9  | 282/354 [13:49<03:09,  2.63s/it]
+[2024-08-12T06:12:36.391+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7643106320?itemId=20315117956&vendorItemId=87375490395&q=%EB%B2%84%EB%93%A4%EB%A7%98%EB%A7%88&itemsCount=36&searchId=ddd7bc1d40994c6296ee9fc31bbd2421&rank=1&isAddedCart=
+[2024-08-12T06:12:37.629+0000] {logging_mixin.py:188} WARNING -  80%|#######9  | 283/354 [13:51<02:52,  2.43s/it]
+[2024-08-12T06:12:38.399+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7183660908?itemId=18122392431&vendorItemId=85273473690&q=%EC%94%A8%ED%88%AC%EC%97%A0%EB%89%B4+%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84&itemsCount=36&searchId=07e679f420504ee2aefb720f00abb106&rank=0&isAddedCart=
+[2024-08-12T06:12:41.478+0000] {logging_mixin.py:188} WARNING -  80%|########  | 284/354 [13:55<03:19,  2.85s/it]
+[2024-08-12T06:12:41.957+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6703708235?itemId=20548044181&vendorItemId=87561367684&q=%EB%B6%80%EA%B0%80%EB%B6%80+%EB%B2%84%ED%84%B0%ED%94%8C%EB%9D%BC%EC%9D%B4&itemsCount=49&searchId=84ff92bb2aee4165ac82bc37582a3b61&rank=3&isAddedCart=
+[2024-08-12T06:12:42.982+0000] {logging_mixin.py:188} WARNING -  81%|########  | 285/354 [13:57<02:48,  2.45s/it]
+[2024-08-12T06:12:43.665+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1703880896?itemId=2899602006&vendorItemId=71147013759&src=1042503&spec=10304982&addtag=400&ctag=1703880896&lptag=10304982I2899602006&itime=20240710095848&pageType=PRODUCT&pageValue=1703880896&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710095848&redirect=landing&gclid=&mcid=4d482240be4a4b43b72aaabc06ecd1d6&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:46.739+0000] {logging_mixin.py:188} WARNING -  81%|########  | 286/354 [14:00<03:13,  2.84s/it]
+[2024-08-12T06:12:47.300+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6424958403?itemId=13840152112&vendorItemId=81090270722&src=1042503&spec=10304982&addtag=400&ctag=6424958403&lptag=10304982I13840152112&itime=20240710095931&pageType=PRODUCT&pageValue=6424958403&wPcid=16980653682695622259975&wRef=www.google.com&wTime=20240710095931&redirect=landing&gclid=&mcid=4dc421403ccc431680d9827bf2f9b534&campaignid=&adgroupid=&isAddedCart=
+[2024-08-12T06:12:48.382+0000] {logging_mixin.py:188} WARNING -  81%|########1 | 287/354 [14:02<02:46,  2.48s/it]
+[2024-08-12T06:12:49.125+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8113548187?itemId=22848943241&vendorItemId=88846395710
+[2024-08-12T06:12:52.163+0000] {logging_mixin.py:188} WARNING -  81%|########1 | 288/354 [14:06<03:09,  2.87s/it]
+[2024-08-12T06:12:53.228+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7324594536?itemId=19647725078
+[2024-08-12T06:12:55.319+0000] {logging_mixin.py:188} WARNING -  82%|########1 | 289/354 [14:09<03:12,  2.96s/it]
+[2024-08-12T06:12:56.307+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6359859813?itemId=13504189789&vendorItemId=81656517557
+[2024-08-12T06:12:58.402+0000] {logging_mixin.py:188} WARNING -  82%|########1 | 290/354 [14:12<03:11,  2.99s/it]
+[2024-08-12T06:12:59.163+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7143844663?itemId=17945222128&vendorItemId=85103050238
+[2024-08-12T06:13:02.207+0000] {logging_mixin.py:188} WARNING -  82%|########2 | 291/354 [14:16<03:23,  3.24s/it]
+[2024-08-12T06:13:03.261+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6489890342?itemId=15153182964
+[2024-08-12T06:13:05.310+0000] {logging_mixin.py:188} WARNING -  82%|########2 | 292/354 [14:19<03:18,  3.20s/it]
+[2024-08-12T06:13:05.821+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7792561345?itemId=21121044772&vendorItemId=88083514452
+[2024-08-12T06:13:08.905+0000] {logging_mixin.py:188} WARNING -  83%|########2 | 293/354 [14:23<03:22,  3.32s/it]
+[2024-08-12T06:13:09.788+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6756330949?itemId=15819475419&vendorItemId=83031386495
+[2024-08-12T06:13:11.831+0000] {logging_mixin.py:188} WARNING -  83%|########3 | 294/354 [14:26<03:11,  3.20s/it]
+[2024-08-12T06:13:12.595+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8192791429?itemId=23452613490&vendorItemId=85801772380
+[2024-08-12T06:13:13.682+0000] {logging_mixin.py:188} WARNING -  83%|########3 | 295/354 [14:27<02:44,  2.80s/it]
+[2024-08-12T06:13:14.452+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7434578417?itemId=20558922283&vendorItemId=75968003326
+[2024-08-12T06:13:17.503+0000] {logging_mixin.py:188} WARNING -  84%|########3 | 296/354 [14:31<02:59,  3.10s/it]
+[2024-08-12T06:13:18.368+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6473153567?itemId=215389290&vendorItemId=3518516840
+[2024-08-12T06:13:21.446+0000] {logging_mixin.py:188} WARNING -  84%|########3 | 297/354 [14:35<03:11,  3.35s/it]
+[2024-08-12T06:13:22.137+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/38700251?itemId=142588261&vendorItemId=3310040169
+[2024-08-12T06:13:24.236+0000] {logging_mixin.py:188} WARNING -  84%|########4 | 298/354 [14:38<02:58,  3.19s/it]
+[2024-08-12T06:13:24.808+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7568770212?itemId=19955880017&vendorItemId=88109829169
+[2024-08-12T06:13:25.848+0000] {logging_mixin.py:188} WARNING -  84%|########4 | 299/354 [14:40<02:29,  2.71s/it]
+[2024-08-12T06:13:26.529+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/13191167?itemId=55206380&vendorItemId=3000275893
+[2024-08-12T06:13:28.564+0000] {logging_mixin.py:188} WARNING -  85%|########4 | 300/354 [14:42<02:26,  2.71s/it]
+[2024-08-12T06:13:29.218+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6747895519?itemId=12829517904&vendorItemId=3049977759
+[2024-08-12T06:13:30.256+0000] {logging_mixin.py:188} WARNING -  85%|########5 | 301/354 [14:44<02:07,  2.41s/it]
+[2024-08-12T06:13:30.766+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4795877375?itemId=6151244509&vendorItemId=73113099140
+[2024-08-12T06:13:32.849+0000] {logging_mixin.py:188} WARNING -  85%|########5 | 302/354 [14:47<02:08,  2.46s/it]
+[2024-08-12T06:13:33.435+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7371052727?itemId=19014005419&vendorItemId=86138597841
+[2024-08-12T06:13:34.507+0000] {logging_mixin.py:188} WARNING -  86%|########5 | 303/354 [14:48<01:53,  2.22s/it]
+[2024-08-12T06:13:35.215+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7102202571?itemId=17731209474&vendorItemId=84895940076
+[2024-08-12T06:13:37.293+0000] {logging_mixin.py:188} WARNING -  86%|########5 | 304/354 [14:51<01:59,  2.39s/it]
+[2024-08-12T06:13:38.072+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7978464572?itemId=22126132925&vendorItemId=88598363296
+[2024-08-12T06:13:39.149+0000] {logging_mixin.py:188} WARNING -  86%|########6 | 305/354 [14:53<01:49,  2.23s/it]
+[2024-08-12T06:13:39.859+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4349621578?itemId=5129203625&vendorItemId=72410895571
+[2024-08-12T06:13:42.936+0000] {logging_mixin.py:188} WARNING -  86%|########6 | 306/354 [14:57<02:09,  2.70s/it]
+[2024-08-12T06:13:43.462+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8176548409?itemId=23366530124&vendorItemId=90396844398
+[2024-08-12T06:13:45.537+0000] {logging_mixin.py:188} WARNING -  87%|########6 | 307/354 [14:59<02:05,  2.67s/it]
+[2024-08-12T06:13:46.077+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8185489424?itemId=23408798100&vendorItemId=90435926718
+[2024-08-12T06:13:48.107+0000] {logging_mixin.py:188} WARNING -  87%|########7 | 308/354 [15:02<02:01,  2.64s/it]
+[2024-08-12T06:13:48.824+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7178159377?itemId=18098934128&vendorItemId=85228511957
+[2024-08-12T06:13:51.911+0000] {logging_mixin.py:188} WARNING -  87%|########7 | 309/354 [15:06<02:14,  2.99s/it]
+[2024-08-12T06:13:52.395+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7868023917?itemId=21486326418&vendorItemId=88539731808
+[2024-08-12T06:13:55.477+0000] {logging_mixin.py:188} WARNING -  88%|########7 | 310/354 [15:09<02:19,  3.16s/it]
+[2024-08-12T06:13:56.206+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7011623108?itemId=17233692958&vendorItemId=84405365783
+[2024-08-12T06:13:57.255+0000] {logging_mixin.py:188} WARNING -  88%|########7 | 311/354 [15:11<01:58,  2.75s/it]
+[2024-08-12T06:13:57.854+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4617864495?itemId=18763776877&vendorItemId=85895584242
+[2024-08-12T06:13:59.896+0000] {logging_mixin.py:188} WARNING -  88%|########8 | 312/354 [15:14<01:54,  2.71s/it]
+[2024-08-12T06:14:00.703+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7940108189?itemId=22319067168&vendorItemId=88915167462
+[2024-08-12T06:14:01.741+0000] {logging_mixin.py:188} WARNING -  88%|########8 | 313/354 [15:15<01:40,  2.45s/it]
+[2024-08-12T06:14:02.309+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8065577198?itemId=22682546328&vendorItemId=89718519970
+[2024-08-12T06:14:05.349+0000] {logging_mixin.py:188} WARNING -  89%|########8 | 314/354 [15:19<01:52,  2.80s/it]
+[2024-08-12T06:14:06.498+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7297961174?itemId=18668039454&vendorItemId=90088475628&q=%EB%AA%A8%EC%9C%A0%EC%8B%A4%EA%B0%90+%EC%A0%96%EB%B3%91&itemsCount=36&searchId=c44ad267ef8843f983e3f7e5b9dd61f3&rank=7&isAddedCart=
+[2024-08-12T06:14:07.541+0000] {logging_mixin.py:188} WARNING -  89%|########8 | 315/354 [15:21<01:42,  2.62s/it]
+[2024-08-12T06:14:08.167+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5772724171?itemId=9812722115&vendorItemId=77096286568&q=%EB%8B%A5%ED%84%B0%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%9C%A0%EB%A6%AC&itemsCount=36&searchId=bf643f12b1d3497dbf1828315b4a9230&rank=14&isAddedCart=
+[2024-08-12T06:14:10.235+0000] {logging_mixin.py:188} WARNING -  89%|########9 | 316/354 [15:24<01:40,  2.64s/it]
+[2024-08-12T06:14:10.912+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6900068267?itemId=16592422947&vendorItemId=83777535030&q=%EB%A7%88%EB%8D%94%EC%BC%80%EC%9D%B4+%EC%A0%96%EB%B3%91%EC%86%94&itemsCount=36&searchId=11ba2b920b5a4eae92b67a4db25fc197&rank=3&isAddedCart=
+[2024-08-12T06:14:11.957+0000] {logging_mixin.py:188} WARNING -  90%|########9 | 317/354 [15:26<01:27,  2.36s/it]
+[2024-08-12T06:14:12.525+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6900021537?itemId=16592194829&vendorItemId=83777308989&pickType=COU_PICK&q=%EB%A7%88%EB%8D%94%EC%BC%80%EC%9D%B4+%EC%A0%96%EA%BC%AD%EC%A7%80%EC%86%94&itemsCount=36&searchId=9b1c1cf04c61498fada6efd4be079ac2&rank=0&isAddedCart=
+[2024-08-12T06:14:13.566+0000] {logging_mixin.py:188} WARNING -  90%|########9 | 318/354 [15:27<01:16,  2.14s/it]
+[2024-08-12T06:14:14.147+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4399228242?itemId=5223344974&vendorItemId=72532440666&pickType=COU_PICK&q=%EC%9C%A0%ED%8C%A1+%EC%A0%96%EB%B3%91%EC%86%8C%EB%8F%85%EA%B8%B0&itemsCount=36&searchId=6bca60c5bc0b4341ab75da228b8f47f5&rank=0&isAddedCart=
+[2024-08-12T06:14:16.224+0000] {logging_mixin.py:188} WARNING -  90%|######### | 319/354 [15:30<01:20,  2.29s/it]
+[2024-08-12T06:14:16.766+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6150225813?itemId=11865762635&vendorItemId=79138885993&q=%EB%B0%A4%EB%B6%80%EB%B2%A0%EB%B2%A0&itemsCount=36&searchId=242ea2999f6a4fcb80289531664c59b3&rank=1&isAddedCart=
+[2024-08-12T06:14:18.845+0000] {logging_mixin.py:188} WARNING -  90%|######### | 320/354 [15:33<01:21,  2.39s/it]
+[2024-08-12T06:14:19.946+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2316949007?itemId=3999208906&vendorItemId=71983480995&q=%EB%A7%A4%EC%A7%81%EC%BA%94&itemsCount=36&searchId=a3be3bf369cb419d94a78ed20f213b81&rank=1&isAddedCart=
+[2024-08-12T06:14:23.011+0000] {logging_mixin.py:188} WARNING -  91%|######### | 321/354 [15:37<01:36,  2.92s/it]
+[2024-08-12T06:14:23.855+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/59793?itemId=132852&vendorItemId=3000074852&sourceType=srp_product_ads&clickEventId=1c564340-4a4c-11ef-a241-565349c0e2fc&korePlacement=15&koreSubPlacement=6&q=%EB%A7%88%EB%8D%94%EC%BC%80%EC%9D%B4+%EB%A9%B4%EB%B4%89&itemsCount=36&searchId=f2d49d59ede8412aa2f0b3262104cd1f&rank=5&isAddedCart=
+[2024-08-12T06:14:26.900+0000] {logging_mixin.py:188} WARNING -  91%|######### | 322/354 [15:41<01:42,  3.21s/it]
+[2024-08-12T06:14:27.586+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/30513008?itemId=116213231&vendorItemId=3233357337&pickType=COU_PICK&q=%EB%A7%88%EB%8D%94%EC%BC%80%EC%9D%B4+%EB%84%A4%EC%9D%BC%EC%BC%80%EC%96%B4&itemsCount=36&searchId=419000ea1a1249b0a965d2ab25097799&rank=0&isAddedCart=
+[2024-08-12T06:14:29.667+0000] {logging_mixin.py:188} WARNING -  91%|#########1| 323/354 [15:43<01:35,  3.08s/it]
+[2024-08-12T06:14:30.482+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5964317053?itemId=10698433271&vendorItemId=77979159297&q=%EB%84%A4%EC%9D%B4%EC%B2%98%EB%9F%AC%EB%B8%8C%EB%A9%94%EB%A0%88+%EC%86%90%ED%86%B1&itemsCount=36&searchId=04a59297adc04917937f9ec385f005b7&rank=3&isAddedCart=
+[2024-08-12T06:14:32.561+0000] {logging_mixin.py:188} WARNING -  92%|#########1| 324/354 [15:46<01:30,  3.02s/it]
+[2024-08-12T06:14:33.113+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7353301794?itemId=18927392893&vendorItemId=75138150986&q=%EB%8C%80%EB%A6%BC%EB%B0%94%EC%8A%A4+%EC%95%84%EA%B8%B0%EB%B9%84%EB%8D%B0+%EC%88%98%EC%A0%84&itemsCount=36&searchId=76d387bc2cd44f92b9c614841a03bfc2&rank=0&isAddedCart=
+[2024-08-12T06:14:35.188+0000] {logging_mixin.py:188} WARNING -  92%|#########1| 325/354 [15:49<01:24,  2.91s/it]
+[2024-08-12T06:14:36.173+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6157499986?itemId=11927946348&vendorItemId=79200732818&q=%ED%81%B4%EB%A6%AC%EC%96%B4%EC%9E%AD+%EC%95%84%EA%B8%B0%EB%B9%84%EB%8D%B0+%EC%88%98%EC%A0%84&itemsCount=36&searchId=6cf251e7e32a4d4286f82be56641fd82&rank=1&isAddedCart=
+[2024-08-12T06:14:39.245+0000] {logging_mixin.py:188} WARNING -  92%|#########2| 326/354 [15:53<01:31,  3.25s/it]
+[2024-08-12T06:14:39.823+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8083010877?itemId=22799636743&vendorItemId=86851012210&q=%ED%97%A4%EC%9D%B4%ED%99%88&itemsCount=36&searchId=9e1e1bcaf935405fad5f7a7dad980c6b&rank=2&isAddedCart=
+[2024-08-12T06:14:41.899+0000] {logging_mixin.py:188} WARNING -  92%|#########2| 327/354 [15:56<01:22,  3.07s/it]
+[2024-08-12T06:14:42.517+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7011564127?itemId=17233406538&vendorItemId=84405084698&q=%ED%97%A4%EC%9D%B4%ED%99%88+egg+pro&itemsCount=36&searchId=6f7522e82a3149c6bd2bc07d94655c7e&rank=0&isAddedCart=
+[2024-08-12T06:14:43.592+0000] {logging_mixin.py:188} WARNING -  93%|#########2| 328/354 [15:57<01:09,  2.66s/it]
+[2024-08-12T06:14:44.135+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5069358900?itemId=6857487257&vendorItemId=74150089715&q=%EB%B8%8C%EB%9D%BC%EC%9A%B4+%EC%B2%B4%EC%98%A8%EA%B3%84&itemsCount=36&searchId=580ef16260444719b4f7720003273169&rank=1&isAddedCart=
+[2024-08-12T06:14:46.375+0000] {logging_mixin.py:188} WARNING -  93%|#########2| 329/354 [16:00<01:07,  2.70s/it]
+[2024-08-12T06:14:46.919+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4821512?itemId=21967045&vendorItemId=3032124332&pickType=COU_PICK&q=%ED%9C%B4%EB%B9%84%EB%94%95%EC%B2%B4%EC%98%A8%EA%B3%84&itemsCount=36&searchId=1b2275e3cbb345f48a6209ca28358a80&rank=0&isAddedCart=
+[2024-08-12T06:14:48.001+0000] {logging_mixin.py:188} WARNING -  93%|#########3| 330/354 [16:02<00:56,  2.37s/it]
+[2024-08-12T06:14:48.625+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8189763479?itemId=23433613353&vendorItemId=70558972590&q=%EC%A0%9C%EC%9D%B4%EC%95%A4%EC%A0%9C%EB%82%98+%EC%97%AD%EB%A5%98%EB%B0%A9%EC%A7%80%EC%BF%A0%EC%85%98&itemsCount=36&searchId=9c0c458bc071437d9c22c9845fda4076&rank=1&isAddedCart=
+[2024-08-12T06:14:51.696+0000] {logging_mixin.py:188} WARNING -  94%|#########3| 331/354 [16:05<01:03,  2.77s/it]
+[2024-08-12T06:14:52.374+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/147565139?itemId=603811505&vendorItemId=4582638154&pickType=COU_PICK&q=%EB%B2%A0%EC%9D%B4%EB%B9%84%EB%B5%A8+%EB%AF%B8%EB%8B%88&itemsCount=36&searchId=0d9f45e3324348a2beb6fc03d6a4a74b&rank=0&isAddedCart=
+[2024-08-12T06:14:54.463+0000] {logging_mixin.py:188} WARNING -  94%|#########3| 332/354 [16:08<01:00,  2.77s/it]
+[2024-08-12T06:14:55.032+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8211110879?itemId=23568396667&vendorItemId=89511096138&q=%ED%8F%AC%EA%B7%B8%EB%82%B4+%EB%A7%A5%EC%8A%A4&itemsCount=36&searchId=a7e74c1b6b1440598fb2904f461c559d&rank=1&isAddedCart=
+[2024-08-12T06:14:56.100+0000] {logging_mixin.py:188} WARNING -  94%|#########4| 333/354 [16:10<00:51,  2.43s/it]
+[2024-08-12T06:14:56.707+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/335133695?itemId=1069466116&vendorItemId=5557443410&sourceType=SDW_TOP_SELLING_WIDGET_V2&searchId=bcaee1eda072419591cd9b372c24b6ae&q=%ED%83%80%EC%9D%B4%EB%8B%88%EB%9F%AC%EB%B8%8C%20%EB%AA%A8%EB%B9%8C&isAddedCart=
+[2024-08-12T06:14:59.742+0000] {logging_mixin.py:188} WARNING -  94%|#########4| 334/354 [16:13<00:55,  2.79s/it]
+[2024-08-12T06:15:00.923+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/594493?itemId=978207511&vendorItemId=84832300561&pickType=COU_PICK&q=%EB%A7%88%EB%8D%94%EC%BC%80%EC%9D%B4+%EC%A0%96%EB%B3%91%EC%A7%91%EA%B2%8C&itemsCount=36&searchId=c9da1582fab3490db4441bc6c998d504&rank=0&isAddedCart=
+[2024-08-12T06:15:02.974+0000] {logging_mixin.py:188} WARNING -  95%|#########4| 335/354 [16:17<00:55,  2.92s/it]
+[2024-08-12T06:15:03.677+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6962086794?itemId=16952940706&vendorItemId=88519613448&pickType=COU_PICK&q=%EB%B3%B4%EB%A5%B4%EB%A5%B4+%EB%B6%84%EC%9C%A0%ED%8F%AC%ED%8A%B8&itemsCount=36&searchId=a84b97431d9643a68408ccaf93434d22&rank=0&isAddedCart=
+[2024-08-12T06:15:06.723+0000] {logging_mixin.py:188} WARNING -  95%|#########4| 336/354 [16:20<00:57,  3.17s/it]
+[2024-08-12T06:15:07.219+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7679558495?itemId=20508331540&vendorItemId=86962013988&pickType=COU_PICK&sourceType=srp_product_ads&clickEventId=0066a120-4a5b-11ef-89d7-eccd2a7bac8b&korePlacement=15&koreSubPlacement=1&q=%EB%A6%B4%EB%A6%AC%EB%B8%8C+%EB%B6%84%EC%9C%A0%ED%90%87%ED%8A%B8&itemsCount=36&searchId=87f0d31053904534a952e40ea5e58d90&rank=0&isAddedCart=
+[2024-08-12T06:15:10.299+0000] {logging_mixin.py:188} WARNING -  95%|#########5| 337/354 [16:24<00:55,  3.29s/it]
+[2024-08-12T06:15:10.934+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6971502179?itemId=17005500606&vendorItemId=84181383372&pickType=COU_PICK&q=%EC%98%A5%EC%8A%A4%ED%86%A0%ED%8A%B8+%EC%A0%96%EB%B3%91%EA%B1%B4%EC%A1%B0%EB%8C%80&itemsCount=36&searchId=15f9cc3b8edb492487cbc3110d7575d8&rank=1&isAddedCart=
+[2024-08-12T06:15:13.023+0000] {logging_mixin.py:188} WARNING -  95%|#########5| 338/354 [16:27<00:49,  3.12s/it]
+[2024-08-12T06:15:13.776+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7358064211?itemId=18950757618&vendorItemId=86077017849&q=%ED%95%98%EC%9D%B4%EB%B9%84+%EC%A0%96%EB%B3%91%EA%B1%B4%EC%A1%B0%EB%8C%80&itemsCount=36&searchId=899629577cb14e4c966ff100570b1918&rank=0&isAddedCart=
+[2024-08-12T06:15:16.847+0000] {logging_mixin.py:188} WARNING -  96%|#########5| 339/354 [16:31<00:49,  3.33s/it]
+[2024-08-12T06:15:17.571+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/1258923534?itemId=2259848208&vendorItemId=70257133815&pickType=COU_PICK&sourceType=srp_product_ads&clickEventId=0c2f38d0-4a5d-11ef-8cea-566855a256b2&korePlacement=15&koreSubPlacement=1&q=%EC%88%98%EC%9C%A0%EB%93%B1&itemsCount=36&searchId=35de339133d840c282b97a86487f567d&rank=0&isAddedCart=
+[2024-08-12T06:15:19.615+0000] {logging_mixin.py:188} WARNING -  96%|#########6| 340/354 [16:33<00:44,  3.16s/it]
+[2024-08-12T06:15:20.129+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6709848393?itemId=15573127312&vendorItemId=82792213930&q=%EC%86%8C%EB%B2%A0%EB%A7%98+%EA%B8%B0%EC%A0%80%EA%B7%80%EA%B5%90%ED%99%98%EB%8C%80&itemsCount=36&searchId=a6ba8b2448764c4488557862b5f518e5&rank=2&isAddedCart=
+[2024-08-12T06:15:22.202+0000] {logging_mixin.py:188} WARNING -  96%|#########6| 341/354 [16:36<00:38,  2.99s/it]
+[2024-08-12T06:15:22.682+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7559006073?itemId=19910226182&vendorItemId=86328636755&q=%EC%86%8C%EB%B2%A0%EB%A7%98+%EA%B8%B0%EC%A0%80%EA%B7%80%EA%B5%90%ED%99%98%EB%8C%80&itemsCount=36&searchId=a6ba8b2448764c4488557862b5f518e5&rank=1&isAddedCart=
+[2024-08-12T06:15:24.756+0000] {logging_mixin.py:188} WARNING -  97%|#########6| 342/354 [16:38<00:34,  2.86s/it]
+[2024-08-12T06:15:25.290+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/4387719039?itemId=5196585194&vendorItemId=72493964787&q=%EC%95%84%EA%B0%80%EC%A7%B1+%EA%B8%B0%EC%A0%80%EA%B7%80%EA%B5%90%ED%99%98%EB%8C%80&itemsCount=36&searchId=5895f795da514c909277602b046b3b8e&rank=1&isAddedCart=
+[2024-08-12T06:15:27.363+0000] {logging_mixin.py:188} WARNING -  97%|#########6| 343/354 [16:41<00:30,  2.78s/it]
+[2024-08-12T06:15:27.918+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/8218728511?itemId=23614192758&vendorItemId=90639818370&q=%EB%85%B8%EC%8B%9C%EB%B6%80+%EC%BD%A7%EB%AC%BC%ED%9D%A1%EC%9E%85%EA%B8%B0&itemsCount=36&searchId=97470cb93292493f8958a81c745da93a&rank=14&isAddedCart=
+[2024-08-12T06:15:29.961+0000] {logging_mixin.py:188} WARNING -  97%|#########7| 344/354 [16:44<00:27,  2.73s/it]
+[2024-08-12T06:15:30.549+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2016431917?itemId=3429995402&vendorItemId=71416515239&q=%ED%8F%AC%ED%94%84%EB%B2%A0%EB%B2%A0+%EC%95%84%EA%B8%B0%EB%B9%84%EB%8D%B0&itemsCount=36&searchId=a1944022ddf94818a7bc5ac95d0bce97&rank=0&isAddedCart=
+[2024-08-12T06:15:31.589+0000] {logging_mixin.py:188} WARNING -  97%|#########7| 345/354 [16:45<00:21,  2.40s/it]
+[2024-08-12T06:15:32.251+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7011738039?itemId=17234296038&vendorItemId=84405959383&q=%EC%B9%98%EC%BD%94+%EB%B0%A4%EB%B9%84%EB%8D%B0&itemsCount=36&searchId=78e3ef6521224969ace86fd8799568ab&rank=5&isAddedCart=
+[2024-08-12T06:15:33.283+0000] {logging_mixin.py:188} WARNING -  98%|#########7| 346/354 [16:47<00:17,  2.19s/it]
+[2024-08-12T06:15:33.922+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/7375824256?itemId=19036940519&vendorItemId=86160830679&q=%EB%A7%90%EB%9E%91%ED%95%98%EB%8B%88+%EC%8B%B1%ED%81%AC%EB%8C%80+%EC%9A%95%EC%A1%B0&itemsCount=36&searchId=cc961597a9c74531b877fca11d1e988c&rank=0&isAddedCart=
+[2024-08-12T06:15:36.966+0000] {logging_mixin.py:188} WARNING -  98%|#########8| 347/354 [16:51<00:18,  2.64s/it]
+[2024-08-12T06:15:37.523+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/2310930900?itemId=21563613250&vendorItemId=88615884910&pickType=COU_PICK&q=%EC%8A%88%EB%84%88%EA%B8%80+%EC%9A%95%EC%A1%B0&itemsCount=36&searchId=dbff4089c30545fd9d88504949b5b096&rank=0&isAddedCart=
+[2024-08-12T06:15:38.552+0000] {logging_mixin.py:188} WARNING -  98%|#########8| 348/354 [16:52<00:13,  2.32s/it]
+[2024-08-12T06:15:39.679+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/66575831?itemId=223734701&vendorItemId=3543379503&pickType=COU_PICK&q=%EC%84%BC%EC%8A%A42030+%EC%9A%95%EC%A1%B0&itemsCount=36&searchId=fc96e79ba56540d1995547df7f3e5527&rank=0&isAddedCart=
+[2024-08-12T06:15:40.768+0000] {logging_mixin.py:188} WARNING -  99%|#########8| 349/354 [16:54<00:11,  2.29s/it]
+[2024-08-12T06:15:41.244+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5930190117?itemId=10535294608&vendorItemId=77816830800&pickType=COU_PICK&q=%EC%83%A4%EC%98%A4%EB%AF%B8+%EC%98%A8%EC%8A%B5%EB%8F%84%EA%B3%84&itemsCount=36&searchId=11ee2bc0c54c412393ce0c677c6b1ca3&rank=0&isAddedCart=
+[2024-08-12T06:15:42.314+0000] {logging_mixin.py:188} WARNING -  99%|#########8| 350/354 [16:56<00:08,  2.07s/it]
+[2024-08-12T06:15:43.015+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/330587877?itemId=1056538085&vendorItemId=88754615659&q=%ED%9C%B4%EB%B9%84%EB%94%95+%EC%98%A8%EC%8A%B5%EB%8F%84%EA%B3%84+HT+7&itemsCount=36&searchId=9c06cff9e9ea45bcb31864bb430ad0e3&rank=1&isAddedCart=
+[2024-08-12T06:15:44.096+0000] {logging_mixin.py:188} WARNING -  99%|#########9| 351/354 [16:58<00:05,  1.98s/it]
+[2024-08-12T06:15:44.769+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/318405929?itemId=383141358&vendorItemId=90765244862&pickType=COU_PICK&q=%ED%94%BC%EC%85%94%ED%94%84%EB%9D%BC%EC%9D%B4%EC%8A%A4+%EC%95%84%EA%B8%B0%EC%B2%B4%EC%9C%A1%EA%B4%80&itemsCount=36&searchId=a524ff7c7f344cc48437383a65e07b7d&rank=0&isAddedCart=
+[2024-08-12T06:15:47.843+0000] {logging_mixin.py:188} WARNING -  99%|#########9| 352/354 [17:02<00:05,  2.51s/it]
+[2024-08-12T06:15:48.415+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/6487310866?itemId=14226604850&vendorItemId=81471914214&q=%ED%8A%A4%EB%A6%BD+%EC%82%AC%EC%9A%B4%EB%93%9C%EB%B6%81&itemsCount=36&searchId=350b8e2f775c41968f51c67d38ccbb3b&rank=7&isAddedCart=
+[2024-08-12T06:15:50.449+0000] {logging_mixin.py:188} WARNING - 100%|#########9| 353/354 [17:04<00:02,  2.54s/it]
+[2024-08-12T06:15:51.040+0000] {logging_mixin.py:188} INFO - https://www.coupang.com/vp/products/5200947072?itemId=6989772255&vendorItemId=88061822282&pickType=COU_PICK&q=%EC%9D%B4%EC%BC%80%EC%95%84+%ED%8A%B8%EB%A1%A4%EB%A6%AC&itemsCount=36&searchId=8a868328f1f044f4bc85f7842212541a&rank=1&isAddedCart=
+[2024-08-12T06:15:54.116+0000] {logging_mixin.py:188} WARNING - 100%|##########| 354/354 [17:08<00:00,  2.88s/it]
+[2024-08-12T06:15:54.117+0000] {logging_mixin.py:188} WARNING - 100%|##########| 354/354 [17:08<00:00,  2.90s/it]
+[2024-08-12T06:15:54.498+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-08-12T06:15:54.498+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-12T06:15:54.509+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=update_coupang, task_id=save_result, execution_date=20240812T055229, start_date=20240812T055845, end_date=20240812T061554
+[2024-08-12T06:15:54.595+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-08-12T06:15:54.640+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-12T06:15:54.642+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
